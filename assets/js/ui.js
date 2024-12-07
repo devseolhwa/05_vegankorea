@@ -126,6 +126,12 @@ $(function(){
             e.stopPropagation();
             return false;
         });
+        $(".sitemapBody > ul > li .aos-init").removeClass("aos-animate");
+        $(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","0s");
+        setTimeout(() => {
+            $(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","1s");
+            $(".sitemapBody > ul > li .aos-init").addClass("aos-animate");
+        } , 100);
     });
     $(document).off("click", ".btnSitemapClose").on("click", ".btnSitemapClose", function(e) {
         e.preventDefault();
