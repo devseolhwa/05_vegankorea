@@ -1,7 +1,7 @@
 $(function(){
 
     // 부드러운 스크롤
-    $(window).load(function(){				
+  /*   $(window).load(function(){				
 		smoothScroll();		
 	});
 
@@ -75,7 +75,7 @@ $(function(){
 			ease: Power3.easeOut,
 			overwrite: 5
 		});		
-	}
+	} */
 
     AOS.init({
         once : true,
@@ -90,7 +90,7 @@ $(function(){
     );
 
     // header scroll
-    const header = document.querySelector("#header");
+    /* const header = document.querySelector("#header");
     let previousScroll = 0;
 
     window.addEventListener("scroll", () => {
@@ -103,7 +103,7 @@ $(function(){
         if (currentScroll <= 100) header.classList.remove("hide", "show");
 
         previousScroll = currentScroll;
-    });
+    }); */
 
     // gnb
     $(document).on("mouseenter focus", "#gnb > ul > li > a", function () {

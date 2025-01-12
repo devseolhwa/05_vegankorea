@@ -6,6 +6,7 @@
     <title>(주)한국비건인증원</title>
     <link rel="SHORTCUT ICON" href="assets/images/favicon.png">
     
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullpage.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
     <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css">
@@ -13,9 +14,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
     <script src="assets/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/lib/ScrollToPlugin.min.js"></script>
-    <script src="assets/js/lib/TweenMax.min.js"></script>
+    <script src="assets/js/lib/ScrollTrigger.min.js"></script>
+    <script src="assets/js/lib/gsap.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.fullpage.js"></script>
     <script src="assets/js/lib/swiper.min.js"></script>
     <script src="assets/js/ui.js"></script>
     <script src="assets/js/main.js"></script>
@@ -33,7 +35,7 @@
             <div id="gnb">
                 <ul>
                     <li>
-                        <a href="#">기관소개</a>
+                        <a href="#">ABOUT KVCS</a>
                         <ul>
                             <li><a href="#">인사말</a></li>
                             <li><a href="#">사업소개</a></li>
@@ -44,7 +46,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">비건 인증</a>
+                        <a href="#">SERVICES</a>
                         <ul>
                             <li><a href="#">인증 소개</a></li>
                             <li><a href="#">인증 절차</a></li>
@@ -53,7 +55,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">알림공간</a>
+                        <a href="#">WHAT'S NEW</a>
                         <ul>
                             <li><a href="#">공지사항</a></li>
                             <li><a href="#">보도자료</a></li>
@@ -61,7 +63,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#">고객센터</a>
+                        <a href="#">CONTACT US</a>
                         <ul>
                             <li><a href="#">문의하기</a></li>
                             <li><a href="#">자주 묻는 질문</a></li>
@@ -96,8 +98,8 @@
                     </ul>
                 </li>
                 <li>
-                    <strong data-aos="fade-left" data-aos-delay="100">비건 인증</strong>
-                    <a href="#">비건 인증</a>
+                    <strong data-aos="fade-left" data-aos-delay="100">SERVICES</strong>
+                    <a href="#">SERVICES</a>
                     <ul data-aos="fade-left" data-aos-delay="200">
                         <li><a href="#">인증 소개</a></li>
                         <li><a href="#">인증 절차</a></li>
@@ -106,8 +108,8 @@
                     </ul>
                 </li>
                 <li>
-                    <strong data-aos="fade-left" data-aos-delay="200">알림공간</strong>
-                    <a href="#">알림공간</a>
+                    <strong data-aos="fade-left" data-aos-delay="200">WHAT'S NEW</strong>
+                    <a href="#">WHAT'S NEW</a>
                     <ul data-aos="fade-left" data-aos-delay="300">
                         <li><a href="#">공지사항</a></li>
                         <li><a href="#">보도자료</a></li>
@@ -115,8 +117,8 @@
                     </ul>
                 </li>
                 <li>
-                    <strong data-aos="fade-left" data-aos-delay="300">고객센터</strong>
-                    <a href="#">고객센터</a>
+                    <strong data-aos="fade-left" data-aos-delay="300">CONTACT US</strong>
+                    <a href="#">CONTACT US</a>
                     <ul data-aos="fade-left" data-aos-delay="400">
                         <li><a href="#">문의하기</a></li>
                         <li><a href="#">자주 묻는 질문</a></li>
@@ -128,261 +130,207 @@
     </div><!-- sitemapWrap END -->
 
     <div id="main">
-        <section class="section01">
-            <div class="visualWrap">
-                <div class="visualSwiper swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-swiper-autoplay="5000">
-                            <div class="visualBg">
-                                <img src="assets/images/main/img_visual01.jpg" alt="" class="mobileHide">
-                                <img src="assets/images/main/img_visual01_m.jpg" alt="" class="mobileShow">
+
+        <div id="fullpage">
+            <section class="section" id="section1">
+                <div class="visualWrap">
+                    <div class="visualSwiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-swiper-autoplay="5000">
+                                <div class="visualBg">
+                                    <img src="assets/images/main/img_visual01.jpg" alt="" class="mobileHide">
+                                    <img src="assets/images/main/img_visual01_m.jpg" alt="" class="mobileShow">
+                                </div>
+                                <div class="visualText">
+                                    <p>(주)한국비건인증원</p>
+                                    <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
+                                    <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
+                                </div>
                             </div>
-                            <div class="visualText">
-                                <p>(주)한국비건인증원</p>
-                                <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
-                                <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
+                            <div class="swiper-slide" data-swiper-autoplay="5000">
+                                <div class="visualBg">
+                                    <img src="assets/images/main/img_visual02.jpg" alt="" class="mobileHide">
+                                    <img src="assets/images/main/img_visual02_m.jpg" alt="" class="mobileShow">
+                                </div>
+                                <div class="visualText">
+                                    <p>(주)한국비건인증원</p>
+                                    <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
+                                    <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-autoplay="5000">
+                                <div class="visualBg">
+                                    <img src="assets/images/main/img_visual03.jpg" alt="" class="mobileHide">
+                                    <img src="assets/images/main/img_visual03_m.jpg" alt="" class="mobileShow">
+                                </div>
+                                <div class="visualText">
+                                    <p>(주)한국비건인증원</p>
+                                    <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
+                                    <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide" data-swiper-autoplay="5000">
-                            <div class="visualBg">
-                                <img src="assets/images/main/img_visual02.jpg" alt="" class="mobileHide">
-                                <img src="assets/images/main/img_visual02_m.jpg" alt="" class="mobileShow">
-                            </div>
-                            <div class="visualText">
-                                <p>(주)한국비건인증원</p>
-                                <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
-                                <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
-                            </div>
+                    </div><!-- visualSwiper END -->
+                    <div class="visualControl">
+                        <div class="pagination"></div>
+                    </div>
+                </div><!-- visualWrap END -->
+                <div class="scrollDown">
+                    <p>Scroll Down</p>
+                    <i><span class="blind">스크롤아이콘</span></i>
+                </div>
+            </section><!-- section1 END -->
+
+            <section class="section" id="section2">
+                <div class="inner">
+                    <div class="imgMotion">
+                        <div class="imgGroup">
+                            <img src="assets/images/main/img01.jpg" alt="">
+                            <img src="assets/images/main/img02.jpg" alt="">
+                            <img src="assets/images/main/img03.jpg" alt="">
                         </div>
-                        <div class="swiper-slide" data-swiper-autoplay="5000">
-                            <div class="visualBg">
-                                <img src="assets/images/main/img_visual03.jpg" alt="" class="mobileHide">
-                                <img src="assets/images/main/img_visual03_m.jpg" alt="" class="mobileShow">
-                            </div>
-                            <div class="visualText">
-                                <p>(주)한국비건인증원</p>
-                                <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
-                                <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
-                            </div>
+                        <div class="textGroup">
+                            <p>A Thought</p>
+                            <p class="back"><img src="assets/images/main/text_back.png" alt=""></p>
+                            <p>For All</p>
+                            <p class="text">
+                                <em>모두</em>를 위한 것을 <em>추구</em>합니다.<br />
+                                <em>모두</em>를 위한 것을 <em>약속</em>합니다.
+                            </p>
                         </div>
                     </div>
-                </div><!-- visualSwiper END -->
-                <div class="visualControl">
-                    <div class="pagination"></div>
                 </div>
-            </div><!-- visualWrap END -->
-            <div class="scrollDown">
-                <p>Scroll Down</p>
-                <i><span class="blind">스크롤아이콘</span></i>
-            </div>
-        </section><!-- section01 END -->
+            </section><!-- section2 END -->
 
-        <section class="section02">
-            <div class="inner">
-                <div class="titleGroup">
-                    <h2 class="titleLg" data-aos="fade-right">인증원 소식</h2>
-                    <a href="#" class="btnMore" data-aos="fade-left">바로가기<i></i></a>
-                </div>
-                <div class="noticeWrap">
-                    <ul class="noticeGroup" data-aos="fade-up">
-                        <li>
-                            <a href="#">
-                                <span class="label">공지사항</span>
-                                <p class="title">[수상]한국비건인증원 2024 소비자가 선정한 품질만족대상 수상</p>
-                                <p class="text">안녕하세요. 한국비건인증원입니다. 우리 한국비건인증원은 2024년 7월 11일 디지틀조선일보에서 주최한 2024 소비자가 선정한 품질만족 대상에서 비건 인증기관으로 품질만족대상 기관으로 선정되었습니다.</p>
-                                <p class="bottom">
-                                    <span class="date">2024-08-27</span>
-                                    <span class="more">더보기</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="label">공지사항</span>
-                                <p class="title">[MOU]한국식품연구원-한국비건인증원, 비건 인증 활성화 및 공신력 제고를 위한 업무협약을 체결</p>
-                                <p class="text">우리 한국비건인증원은 한국식품연구원 (원장 백형희)와 지난 2월 28일 "한국식품연구원 본관동’에서 업무협약을 체결했습니다. 이 협약은 소비자의 올바른 비건 제품에 선택권을 보장하고자 비건 인증 제품 활성화 및 비건인증기관</p>
-                                <p class="bottom">
-                                    <span class="date">2024-08-27</span>
-                                    <span class="more">더보기</span>
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="mediaGroup" data-aos="fade-up" data-aos-delay="200">
-                        <li>
-                            <a href="#">
-                                <span class="label">보도자료</span>
-                                <p class="title">일동후디스, 비건 캠페인에 ‘하이뮨 액티브 식물성 단백질’</p>
-                                <p class="img"><img src="assets/images/main/ex_media.jpg" alt="예시이미지"></p>
-                            </a>
-                        </li>
-                    </ul>
-                </div><!-- noticeWrap END -->
-            </div><!-- inner END -->
-        </section><!-- section02 END -->
-
-        <section class="section03">
-            <div class="inner">
-                <div class="titleGroup">
-                    <h2 class="titleLg" data-aos="fade-right">주요사업</h2>
-                    <a href="#" class="btnMore" data-aos="fade-left">바로가기<i></i></a>
-                </div>
-                <div class="businessWrap">
-                    <ul>
-                        <li data-aos="fade-up">
-                            <p class="img"><img src="assets/images/main/img_business01.jpg" alt=""></p>
-                            <p class="text">
-                                <span>Certification</span>
-                                <span>비건 인증 심사 및 평가</span>
-                                <span>국내 최초 비건 인증기관으로 소비자 식품 선택권 강화를 위해 인증합니다.</span>
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="100">
-                            <p class="img"><img src="assets/images/main/img_business02.jpg" alt=""></p>
-                            <p class="text">
-                                <span>Education</span>
-                                <span>비건 교육</span>
-                                <span>인증심사관이 인증 및 관련 교육을 실시, 비건라이프 스타일을 공유합니다.</span>
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="200">
-                            <p class="img"><img src="assets/images/main/img_business03.jpg" alt=""></p>
-                            <p class="text">
-                                <span>Secure Data Base</span>
-                                <span>관련 정보 수집</span>
-                                <span>국내 및 해외 자료의 데이터베이스를 통하여 정보를 분석하고 연구합니다.</span>
-                            </p>
-                        </li>
-                        <li data-aos="fade-up" data-aos-delay="300">
-                            <p class="img"><img src="assets/images/main/img_business04.jpg" alt=""></p>
-                            <p class="text">
-                                <span>Customer Support</span>
-                                <span>고객지원</span>
-                                <span>비건 인증 진행 문의 및 고객 맞춤형 컨설팅을 지원합니다.</span>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div><!-- inner END -->
-        </section><!-- section03 END -->
-
-        <section class="section04" data-aos="fade-up">
-            <div class="inner">
-                <div class="titleGroup">
-                    <h2 class="titleLg">비건 인증 제품검색</h2>
-                    <p>한국비건인증원의 인증을 받은 제품을 조회하실 수 있습니다.</p>
-                </div>
-                <div class="searchWrap">
-                    <form>
-                        <fieldset>
-                            <div class="searchGroup">
-                                <legend class="blind" autocomplete="off">통합검색</legend>
-                                <select name="" id="">
-                                    <option value="">제품 카테고리</option>
-                                </select>
-                                <input type="text" id="searchKeyword" name="searchKeyword" class="searchKeyword" title="검색어 입력" placeholder="키워드를 입력하세요" autocomplete="off">
-                                <button type="submit" class="btnSearch">검색</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div><!-- inner END -->
-        </section><!-- section04 END -->
-
-        <section class="section05">
-            <div class="inner">
-                <div class="titleGroup">
-                    <h2 class="titleLg" data-aos="fade-right">파트너사</h2>
-                </div>
-                <ul class="partnerList">
-                    <li data-aos="fade-up">
-                        <a href="http://ivu.org" target="_blank" title="새창열림">
-                            <img src="assets/images/main/img_partner01.png" alt="">
-                        </a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="100">
-                        <a href="https://www.actasia.org/" target="_blank" title="새창열림">
-                            <img src="assets/images/main/img_partner02.png" alt="">
-                        </a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://vegeproject.org/en/" target="_blank" title="새창열림">
-                            <img src="assets/images/main/img_partner03.png" alt="">
-                        </a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="300">
-                        <a href="#;">
-                            <img src="assets/images/main/img_partner04.png" alt="">
-                        </a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="400">
-                        <a href="#;">
-                            <img src="assets/images/main/img_partner05.png" alt="">
-                        </a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="500">
-                        <a href="#;">
-                            <img src="assets/images/main/img_partner06.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div><!-- inner END -->
-        </section><!-- section05 END -->
-
-        <section class="section06">
-            <div class="inner">
-                <div class="titleGroup">
-                    <h2 class="titleLg" data-aos="fade-right">고객센터</h2>
-                    <a href="#" class="btnMore" data-aos="fade-left">바로가기<i></i></a>
-                </div>
-                <div class="consultingWrap">
-                    <div class="banner" data-aos="fade-right">
-                        <strong>상담 및 문의</strong>
-                        <p>궁금하신 사항은 언제든지 문의주세요.</p>
-                        <a href="#">바로가기</a>
+            <section class="section" id="section3">
+                <div class="inner">
+                    <div class="titleGroup">
+                        <h2 class="titleLg" data-aos="fade-right">주요사업</h2>
+                        <a href="#" class="btnMore" data-aos="fade-left">바로가기<i></i></a>
                     </div>
-                    <ul class="info">
-                        <li data-aos="fade-left">
-                            <strong>Address.</strong>
-                            <p>서울시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호</p>
-                        </li>
-                        <li data-aos="fade-left" data-aos-delay="100">
-                            <strong>Tel.</strong>
-                            <p>02-565-9060 (09 :30~16:30, 점심: 11:30~13:00)</p>
-                        </li>
-                        <li data-aos="fade-left" data-aos-delay="200">
-                            <strong>E-mail.</strong>
-                            <p><a href="">official@vegan-korea.com</a></p>
-                        </li>
-                    </ul>
+                    <div class="businessWrap">
+                        <ul>
+                            <li data-aos="fade-up">
+                                <p class="img"><img src="assets/images/main/img_business01.jpg" alt=""></p>
+                                <p class="text">
+                                    <span>Certification</span>
+                                    <span>비건 인증 심사 및 평가</span>
+                                    <span>국내 최초 비건 인증기관으로 소비자 식품 선택권 강화를 위해 인증합니다.</span>
+                                </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="100">
+                                <p class="img"><img src="assets/images/main/img_business02.jpg" alt=""></p>
+                                <p class="text">
+                                    <span>Education</span>
+                                    <span>비건 교육</span>
+                                    <span>인증심사관이 인증 및 관련 교육을 실시, 비건라이프 스타일을 공유합니다.</span>
+                                </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200">
+                                <p class="img"><img src="assets/images/main/img_business03.jpg" alt=""></p>
+                                <p class="text">
+                                    <span>Secure Data Base</span>
+                                    <span>관련 정보 수집</span>
+                                    <span>국내 및 해외 자료의 데이터베이스를 통하여 정보를 분석하고 연구합니다.</span>
+                                </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="300">
+                                <p class="img"><img src="assets/images/main/img_business04.jpg" alt=""></p>
+                                <p class="text">
+                                    <span>Customer Support</span>
+                                    <span>고객지원</span>
+                                    <span>비건 인증 진행 문의 및 고객 맞춤형 컨설팅을 지원합니다.</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- inner END -->
+            </section><!-- section3 END -->
+
+            <section class="section section04" id="section4">
+                <div class="inner">
+                    <div class="titleGroup">
+                        <h2 class="titleLg">비건 인증 제품검색</h2>
+                        <p>한국비건인증원의 인증을 받은 제품을 조회하실 수 있습니다.</p>
+                    </div>
+                    <div class="searchWrap">
+                        <form>
+                            <fieldset>
+                                <div class="searchGroup">
+                                    <legend class="blind" autocomplete="off">통합검색</legend>
+                                    <select name="" id="">
+                                        <option value="">제품 카테고리</option>
+                                    </select>
+                                    <input type="text" id="searchKeyword" name="searchKeyword" class="searchKeyword" title="검색어 입력" placeholder="키워드를 입력하세요" autocomplete="off">
+                                    <button type="submit" class="btnSearch">검색</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- inner END -->
+            </section><!-- section04 END -->
+
+            <footer id="footer" class="section fp-auto-height">
+                <div class="footerInner">
+                    <div class="footerLogo">
+                        <a href="index.html" title="메인페이지로"> <img src="assets/images/layout/logo_white.svg" alt="(주)한국비건인증원"></a>
+                    </div>
+                    <div class="footerWrap">
+                        <ul class="footerMenu">
+                            <li><a href="#">기관소개</a></li>
+                            <li><a href="#">비건인증</a></li>
+                            <li><a href="#">알림공간</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li><a href="#">인증기업전용</a></li>
+                        </ul>
+                        <ul class="footerInfo">
+                            <li>주소 : 서울특별시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호(우 04799)</li>
+                            <li>TEL : 02-565-9060<br class="mobileShow"/> (AM 9 :30~ PM 4:30, 점심시간: AM 11:30 ~ PM 1:00)</li>
+                            <li>E-Mail : official@vegan-korea.com</li>
+                        </ul>
+                        <p class="footerCopy">ⓒ 2024 한국비건인증원<br class="mobileShow"/> Korea agency of Vegan Certification and Services</p>
+                    </div>
                 </div>
-            </div><!-- inner END -->
-        </section><!-- section06 END -->
+            </footer><!-- footer END -->
+        </div><!-- fullpage END -->
     </div><!-- main END -->
 
-    <footer id="footer">
-        <div class="footerInner">
-            <div class="footerLogo">
-                <a href="index.html" title="메인페이지로"> <img src="assets/images//layout/logo_white.svg" alt="(주)한국비건인증원"></a>
-            </div>
-            <div class="footerWrap">
-                <ul class="footerMenu">
-                    <li><a href="#">기관소개</a></li>
-                    <li><a href="#">비건인증</a></li>
-                    <li><a href="#">알림공간</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">인증기업전용</a></li>
-                </ul>
-                <ul class="footerInfo">
-                    <li>주소 : 서울특별시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호(우 04799)</li>
-                    <li>TEL : 02-565-9060<br class="mobileShow"/> (AM 9 :30~ PM 4:30, 점심시간: AM 11:30 ~ PM 1:00)</li>
-                    <li>E-Mail : official@vegan-korea.com</li>
-                </ul>
-                <p class="footerCopy">ⓒ 2024 한국비건인증원<br class="mobileShow"/> Korea agency of Vegan Certification and Services</p>
-            </div>
-        </div>
-    </footer><!-- footer END -->
+
 
     <button type="button" id="btnTop">TOP</button>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            //autoScrolling: true,
+            //paddingTop: '100px',
+            css3: true,
+            sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
+            navigation: false,
+            navigationPosition: 'left',
+            navigationTooltips: ['비주얼', '섹션2', '섹션3', '섹션4', 'footer'],
+            responsiveWidth: 1000,
+            //scrollOverflow: true,
+            normalScrollElements: '.imgMotion',
+            afterLoad: function(anchorLink, index) {
+                if (index == 2 || index == 3 || index == 4 || index == 5 || index == 6) {
+                    $('#header').addClass("show");
+                }  else {
+                    $('#header').removeClass("show");
+                }
+
+            },
+            /* afterRender: function(){
+                jQuery('#fp-nav .fp-tooltip').each(function(){
+                    var words = jQuery(this).text();
+                    jQuery(this).empty();
+                    jQuery(this).append('<span>'+ words +'</span>');
+                });
+            } */
+        });
+    });
+    </script>
 </body>
 </html>
