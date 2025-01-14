@@ -29,15 +29,33 @@ $(function(){
     }); */
 
     // gnb
-    $(document).on("mouseenter focus", "#gnb > ul > li > a", function () {
-        $(this).parent("li").addClass("active").siblings("li").removeClass("active");
-        $(this).next("ul").stop().slideDown();
+    $(document).on("mouseenter focus", "#gnb > ul > li", function (e) {
+        const $target = $(e.currentTarget);
+        const index = $target.index();
+        const movePercentage = 100;
+    
+        console.log(index);
+        $(".move_box").css("transform", `translateX(${movePercentage * index}%)`);
+        $("#gnb").addClass("on");
+
+        $(this).addClass("active").siblings("li").removeClass("active");
+        $(this).children("ul").stop().slideDown();
         return false;
     }).on("mouseleave", "#gnb > ul > li", function () {
+        $("#gnb").removeClass("on");
         $(this).removeClass("active");
         $(this).children("ul").stop().slideUp();
         return false;
     });
+/* 
+    $("#gnb > ul > li").on("mouseenter", function (e) {
+        const $target = $(e.currentTarget);
+        const index = $target.index();
+        const movePercentage = 100;
+    
+        console.log(index);
+        $(".move_box").css("transform", `translateX(${movePercentage * index}%)`);
+    }); */
 
     // mobile menu
     $(document).off("click", ".btnSitemapOpen").on("click", ".btnSitemapOpen", function(e) {
