@@ -47,15 +47,6 @@ $(function(){
         $(this).children("ul").stop().slideUp();
         return false;
     });
-/* 
-    $("#gnb > ul > li").on("mouseenter", function (e) {
-        const $target = $(e.currentTarget);
-        const index = $target.index();
-        const movePercentage = 100;
-    
-        console.log(index);
-        $(".move_box").css("transform", `translateX(${movePercentage * index}%)`);
-    }); */
 
     // mobile menu
     $(document).off("click", ".btnSitemapOpen").on("click", ".btnSitemapOpen", function(e) {
