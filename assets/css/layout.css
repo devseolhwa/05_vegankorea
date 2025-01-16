@@ -10,7 +10,7 @@
 #header .logo a img{transition: all 0.5s;vertical-align: bottom;}
 #header .logo a:after{content: " ";position: absolute;top: 0;left: 0;width: 242px;height: 65px;background-image: url(../images/layout/logo_color.svg);background-size: contain;background-repeat: no-repeat;opacity: 0;transition: all 0.5s;}
 #gnb {position: relative;}
-#gnb > ul{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;width: 880px;height: 100px;align-items: center;}
+#gnb > ul{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;width: 1000px;height: 100px;align-items: center;}
 #gnb > ul > li{position: relative;width: 190px;box-sizing: border-box;}
 #gnb > ul > li > a{display: flex;justify-content: center;align-items: center;height: 100px;color: #FFF;font-size: 18px;font-weight: 600;line-height: normal;letter-spacing: -1px;text-align: center;font-family: "Montserrat", serif;}
 #gnb > ul > li > ul{display: none;position: absolute;top: 100px;min-width: 170px;left: 50%;padding: 15px 0;transform: translateX(-50%);box-sizing: border-box;border: 1px solid rgba(255, 255, 255, 0.20);background: rgba(255, 255, 255, 0.05);text-align: center;}
@@ -80,6 +80,9 @@
 	.tabletShowInline {display: inline-block !important;}
     .tabletHide{display: none !important;}
 
+    #gnb > ul{width: 830px;}
+    #gnb > ul > li{width: 180px;}
+    #gnb > ul > li > a{font-size: 16px;}
     .sitemapBody > ul > li > ul{margin-top: 15px;}
     .sitemapBody > ul > li > ul > li > a{font-size: 18px;}
 
