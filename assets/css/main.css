@@ -38,7 +38,7 @@
 .fp-scroller{transition-duration: 2s !important;}
 .imgMotion{position: relative;padding: 300px 0 400px;}
 .imgMotionInner{position: relative;}
-.imgMotion .imgGroup{position: absolute;left: 50%;bottom: -145px;transform: translate(-50%, -50%);text-align: center;z-index: 2;}
+.imgMotion .imgGroup{position: absolute;left: 50%;bottom: -70px;transform: translate(-50%, -50%);text-align: center;z-index: 2;}
 .imgMotion .imgGroup span{display: block;width: 300px;height: 300px;background: url('../images/main/img_group.jpg') no-repeat 0 0 / auto 300px;animation: imgGroupAni 5s infinite steps(3);}
 .imgMotion .imgGroup.active img{-webkit-animation: opacityShow 4s linear 0s infinite;animation: opacityShow 4s linear 0s infinite;}
 .imgMotion p{position: relative;color: #222;text-align: center;font-size: 140px;font-size: 7.7vw;font-weight: 700;line-height: normal;letter-spacing: -1px;z-index: 3;}
