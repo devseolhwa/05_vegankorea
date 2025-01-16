@@ -1,32 +1,13 @@
 $(function(){
 
+    $(window).on('load', function () {
+        AOS.refresh();
+    });
     AOS.init({
         once : true,
         throttleDelay : 99,
         duration: 1000
     });
-    
-    // header mouseover
-    /* $("#header, #gnb").hover(
-        () => $("#header").addClass("on"),
-        () => $("#header").removeClass("on")
-    ); */
-
-    // header scroll
-    /* const header = document.querySelector("#header");
-    let previousScroll = 0;
-
-    window.addEventListener("scroll", () => {
-        if (document.body.classList.contains("scrollLock")) return;
-
-        const currentScroll = window.scrollY;
-
-        header.classList.toggle("hide", currentScroll > previousScroll && currentScroll > 100);
-        header.classList.toggle("show", currentScroll <= previousScroll && currentScroll > 100);
-        if (currentScroll <= 100) header.classList.remove("hide", "show");
-
-        previousScroll = currentScroll;
-    }); */
 
     // gnb
     $(document).on("mouseenter focus", "#gnb > ul > li", function (e) {

@@ -17,6 +17,8 @@
     <script src="assets/js/lib/ScrollTrigger.min.js"></script>
     <script src="assets/js/lib/gsap.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
     <script src="assets/js/jquery.fullpage.js"></script>
     <script src="assets/js/lib/swiper.min.js"></script>
     <script src="assets/js/ui.js"></script>
@@ -140,67 +142,67 @@
                 <div class="visualWrap">
                     <div class="visualSwiper swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" data-swiper-autoplay="5000">
+                            <div class="swiper-slide" data-swiper-autoplay="8000">
                                 <div class="visualBg">
-                                    <video src="assets/images/video_visual01.mp4" muted="muted" data-autoplay="data-autoplay" playsinline="playsinline" preload="auto"  class="tabletHide"></video>
-                                    <video src="assets/images/video_visual01.mp4" muted="muted" data-autoplay="data-autoplay" playsinline="playsinline" preload="auto"  class="tabletHide" class="tabletShow"></video>
+                                    <!-- <video class="overlay-video" loop muted playsinline data-autoplay>
+                                        <source src="assets/images/main/KGC_KV_W_0807.mp4" type="video/mp4">
+                                    </video> -->
+                                    <video src="assets/images/main/video_visual.mp4" muted="muted" data-autoplay="data-autoplay" playsinline="playsinline" preload="auto" class="tabletHide"></video>
+                                    <video src="assets/images/main/video_visual.mp4" muted="muted" data-autoplay="data-autoplay" playsinline="playsinline" preload="auto" class="tabletShow"></video>
                                 </div>
                                 <div class="visualText">
                                     <p>(주)한국비건인증원</p>
-                                    <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
-                                    <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
+                                    <p class="text_delay01"><b class="fb900">철저하고 신뢰성 있는 심사 및 평가,</b><br /> 최선을 다할 것을 약속합니다.</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide" data-swiper-autoplay="5000">
+                            <div class="swiper-slide">
                                 <div class="visualBg">
-                                    <img src="assets/images/main/img_visual02.jpg" alt="" class="mobileHide">
-                                    <img src="assets/images/main/img_visual02_m.jpg" alt="" class="mobileShow">
+                                    <!-- <video class="overlay-video" loop muted playsinline data-autoplay>
+                                        <source src="assets/images/main/KGC_KV_W_0807.mp4" type="video/mp4">
+                                    </video> -->
+                                    <video src="assets/images/main/video_visual.mp4" muted="muted" data-autoplay="data-autoplay" playsinline="playsinline" preload="auto"  class="tabletHide"></video>
+                                    <video src="assets/images/main/video_visual.mp4" muted="muted" data-autoplay="data-autoplay" playsinline="playsinline" preload="auto" class="tabletShow"></video>
                                 </div>
                                 <div class="visualText">
                                     <p>(주)한국비건인증원</p>
-                                    <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
-                                    <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" data-swiper-autoplay="5000">
-                                <div class="visualBg">
-                                    <img src="assets/images/main/img_visual03.jpg" alt="" class="mobileHide">
-                                    <img src="assets/images/main/img_visual03_m.jpg" alt="" class="mobileShow">
-                                </div>
-                                <div class="visualText">
-                                    <p>(주)한국비건인증원</p>
-                                    <p class="text_delay01">철저하고 신뢰성 있는<br class="mobileShow" /> 심사 및 평가,</p>
-                                    <p class="text_delay02">최선을 다할 것을 약속합니다.</p>
+                                    <p class="text_delay01"><b class="fb900">철저하고 신뢰성 있는 심사 및 평가,</b><br /> 최선을 다할 것을 약속합니다.</p>
                                 </div>
                             </div>
                         </div>
                     </div><!-- visualSwiper END -->
-                    <div class="visualControl">
+                    <div class="progress">
+                        <div class="progressBar"></div>
                         <div class="pagination"></div>
+                        
+                    </div>
+                    <div class="visualControl">
+                        <div class="count">
+                            <span class="swiper-pagination-current">1</span>
+                            <span class="bar"> / </span>
+                            <span>1</span>
+                        </div>
                     </div>
                 </div><!-- visualWrap END -->
-                <div class="scrollDown">
-                    <p>Scroll Down</p>
-                    <i><span class="blind">스크롤아이콘</span></i>
-                </div>
             </section><!-- section1 END -->
 
             <section class="section" id="section2">
                 <div class="inner">
                     <div class="imgMotion">
-                        <div class="imgGroup">
-                            <img src="assets/images/main/img01.jpg" alt="">
-                            <img src="assets/images/main/img02.jpg" alt="">
-                            <img src="assets/images/main/img03.jpg" alt="">
-                        </div>
-                        <div class="textGroup">
-                            <p>A Thought</p>
-                            <p class="back"><img src="assets/images/main/text_back.png" alt=""></p>
-                            <p>For All</p>
-                            <p class="text">
-                                <em>모두</em>를 위한 것을 <em>추구</em>합니다.<br />
-                                <em>모두</em>를 위한 것을 <em>약속</em>합니다.
-                            </p>
+                        <div class="imgMotionInner">
+                            <div class="textGroup">
+                                <p>A Thought</p>
+                                <p class="back"><img src="assets/images/main/text_back.png" alt=""></p>
+                                <p>For All</p>
+                                <p class="text">
+                                    <em>모두</em>를 위한 것을 <em>추구</em>합니다.<br />
+                                    <em>모두</em>를 위한 것을 <em>약속</em>합니다.
+                                </p>
+                            </div>
+                            <div class="imgGroup">
+                                <img src="assets/images/main/img01.jpg" alt="" class="active">
+                                <img src="assets/images/main/img02.jpg" alt="">
+                                <img src="assets/images/main/img03.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -226,12 +228,12 @@
                                 </li>
                                 <li>
                                     <span>CERTIFED</span>
-                                    <p>9,833</p>
+                                    <p class="countNum1"></p>
                                     <em>PRODUCTS</em>
                                 </li>
                                 <li>
                                     <span>CERTIFIED</span>
-                                    <p>983</p>
+                                    <p class="countNum2"></p>
                                     <em>COMPANYS</em>
                                 </li>
                             </ul>
@@ -247,8 +249,6 @@
                             <a href="#n"><img src="assets/images/main/img_partners06.jpg" alt=""></a>
                             <a href="#n"><img src="assets/images/main/img_partners07.jpg" alt=""></a>
                             <a href="#n"><img src="assets/images/main/img_partners08.jpg" alt=""></a>
-                        </div>
-                        <div class="item">
                             <a href="http://ivu.org" target="_blank" title="새창열림"><img src="assets/images/main/img_partners01.jpg" alt=""></a>
                             <a href="https://www.actasia.org/" target="_blank" title="새창열림"><img src="assets/images/main/img_partners02.jpg" alt=""></a>
                             <a src="https://cdn.imweb.me/thumbnail/20241010/8d56edd8e1fa3.jpg" target="_blank" title="새창열림"><img src="assets/images/main/img_partners03.jpg" alt=""></a>
@@ -286,6 +286,7 @@
                                     </a>
                                 </dd>
                             </dl>
+                            <a href="#"></a>
                         </li>
                         <li class="item2">
                             <dl>
@@ -300,6 +301,7 @@
                                     </a>
                                 </dd>
                             </dl>
+                            <a href="#"></a>
                         </li>
                         <li class="item3">
                             <dl>
@@ -314,6 +316,7 @@
                                     </a>
                                 </dd>
                             </dl>
+                            <a href="#"></a>
                         </li>
                         <li class="item4">
                             <dl>
@@ -328,6 +331,7 @@
                                     </a>
                                 </dd>
                             </dl>
+                            <a href="#"></a>
                         </li>
                         <li class="item5">
                             <dl>
@@ -342,6 +346,7 @@
                                     </a>
                                 </dd>
                             </dl>
+                            <a href="#"></a>
                         </li>
                     </ul>
                 </div>
@@ -355,7 +360,7 @@
                         </div>
                         <div>
                             <ul>
-                                <li><strong>주소 :</strong><span>서울특별시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호(우04799)</span></li>
+                                <li><strong>주소 : </strong><span>서울특별시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호(우04799)</span></li>
                                 <li><strong>전화 : </strong><span>02-565-9060</span></li>
                                 <li><strong>메일 : </strong><span>official@vegan-korea.com</span></li>
                             </ul>
@@ -379,38 +384,5 @@
 
     <button type="button" id="btnTop">TOP</button>
 
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
-            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-            //autoScrolling: true,
-            //paddingTop: '100px',
-            css3: true,
-            sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
-            navigation: false,
-            navigationPosition: 'left',
-            navigationTooltips: ['비주얼', '섹션2', '섹션3', '섹션4', 'footer'],
-            responsiveWidth: 1000,
-            //scrollOverflow: true,
-            normalScrollElements: '.imgMotion',
-            afterLoad: function(anchorLink, index) {
-                if (index == 2 || index == 3 || index == 4 || index == 5 || index == 6) {
-                    $('#header').addClass("show");
-                }  else {
-                    $('#header').removeClass("show");
-                }
-
-            },
-            /* afterRender: function(){
-                jQuery('#fp-nav .fp-tooltip').each(function(){
-                    var words = jQuery(this).text();
-                    jQuery(this).empty();
-                    jQuery(this).append('<span>'+ words +'</span>');
-                });
-            } */
-        });
-    });
-    </script>
 </body>
 </html>

@@ -104,10 +104,10 @@
             menu: false,
             anchors:[],
             lockAnchors: false,
-            navigation: true,
+            navigation: false,
             navigationPosition: 'right',
-            navigationTooltips: ['1','2','3','4','5','6'],
-            showActiveTooltip: true,
+            navigationTooltips: [],
+            showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
             scrollBar: false,
@@ -115,7 +115,7 @@
 
             //scrolling
             css3: true,
-            scrollingSpeed: 1000,
+            scrollingSpeed: 700,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
@@ -507,7 +507,7 @@
 
         if($(this).length){
             //public functions
-            FP.version = '2.9.6';
+            FP.version = '2.9.7';
             FP.setAutoScrolling = setAutoScrolling;
             FP.setRecordHistory = setRecordHistory;
             FP.setScrollingSpeed = setScrollingSpeed;
