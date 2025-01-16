@@ -79,25 +79,28 @@ $(function(){
             swiperSlide.attr("data-swiper-autoplay", videoDuration);
         });
     });
+    let videoBulArray = ["01", "02", "03"];
     let videovisual = new Swiper(".visualSwiper", {
         effect : "fade",
         centeredSlides: true,
         speed: 1000,
         loop: false,
         autoplay: {
-            //elay: 5000,
+            delay: 5000,
             disableOnInteraction: false,
         },
+        pagination: {
+            el: ".pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<button type="button" class="' + className + '">' + '<span class="bar"></span></button>';
+            },		
+        },
         on: {
-            slideChangeTransitionEnd: function(){
-                let num = this.activeIndex + 1;
-                $(".control .bar .active_bar").removeClass("on");
-                $(".control .btn_bul:nth-child(" + num + ") .bar .active_bar").addClass("on");
-            },
             slideChangeTransitionStart: function(){
                 let num = this.activeIndex + 1;
-                $(".visualControl button").removeClass("on");
-                $(".visualControl button:nth-child(" + num + ")").addClass("on");
+                $(".progress button").removeClass("on");
+                $(".progress button:nth-child(" + num + ")").addClass("on");
 
                 // 동영상 hold로 주석처리
                 let thisActiveIndex = this.activeIndex;
@@ -110,8 +113,8 @@ $(function(){
         },
     });
     let firstSet = function () {
-        const firstVideo = $(".visualSwiper .swiper-slide").eq(0).find("video");
-        $(".visualControl button").eq(0).addClass("on");
+        $(".visualSwiper .swiper-slide").find("video").get(0).play();
+        $(".progress button").eq(0).addClass("on");
         /* if (firstVideo.length) {
             firstVideo.get(0).currentTime = 0;
             firstVideo.get(0).play();
