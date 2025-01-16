@@ -37,6 +37,11 @@ $(function(){
         },
         
         onLeave: function (anchorLink, index, direction) {
+            if (index == 2) {
+                $(".imgGroup").addClass("active");
+            } else {
+                $(".imgGroup").removeClass("active");
+            }
             if (index == 3) {
                 $({ val : 0 }).animate({ val : 9833 }, {
                     duration: 1500,
