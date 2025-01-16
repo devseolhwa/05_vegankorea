@@ -19,6 +19,7 @@ $(function(){
         //navigationTooltips : ["visual", "motion", "status", "products"],
         loopBottom : false,
         afterLoad : function (anchorLink, index) {
+            
             if($(".section").hasClass("on")){
                     $(".section.active .aos-init").addClass("aos-animate");
             } else {
