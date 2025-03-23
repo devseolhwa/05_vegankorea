@@ -129,8 +129,8 @@
 
     #section1,
     #section1 .fp-tableCell{height: auto !important;}
-    .visualSwiper{height: 100%;min-height: 400px;}
-    .visualSwiper .visualBg{height: 100%;min-height: 400px;}
+    .visualSwiper{height: 100%;min-height: 100%;}
+    .visualSwiper .visualBg{height: 100%;min-height: 280px;padding-top: 50%;}
     .pagination{bottom: 13%;}
     .visualControl .count{font-size: 14px;}
 
