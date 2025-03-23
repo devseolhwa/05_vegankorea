@@ -1,6 +1,6 @@
 $(function(){
 
-    $(window).on('load', function () {
+    $(window).on("load", function () {
         AOS.refresh();
     });
     AOS.init({
@@ -11,6 +11,9 @@ $(function(){
 
     // gnb
     $(document).on("mouseenter focus", "#gnb > ul > li", function (e) {
+        if ($(".btnGnbOpen").hasClass("on")) {
+            return false; // 이벤트 중지
+        }
         const $target = $(e.currentTarget);
         const index = $target.index();
         const movePercentage = 100;
@@ -23,10 +26,25 @@ $(function(){
         $(this).children("ul").stop().slideDown();
         return false;
     }).on("mouseleave", "#gnb > ul > li", function () {
+        if ($(".btnGnbOpen").hasClass("on")) {
+            return false; // 이벤트 중지
+        }
+
         $("#gnb").removeClass("on");
         $(this).removeClass("active");
         $(this).children("ul").stop().slideUp();
         return false;
+    });
+    $(document).off("click", ".btnGnbOpen").on("click", ".btnGnbOpen", function(e) {
+        e.preventDefault();
+        $(this).addClass("on");
+        $("#header").addClass("show");
+        $("#gnb").addClass("all");
+    });
+    $(document).off("click", ".btnGnbOpen.on").on("click", ".btnGnbOpen.on", function(e) {
+        e.preventDefault();
+        $(this).removeClass("on");
+        $("#gnb").removeClass("all");
     });
 
     // mobile menu
@@ -67,7 +85,7 @@ $(function(){
     });
 
     // 상단으로
-    let btnTop = document.querySelector("#btnTop"),
+    /* let btnTop = document.querySelector("#btnTop"),
         headerH = 70;
 
     window.addEventListener("scroll", () => {
@@ -79,5 +97,5 @@ $(function(){
     });
     $("#btnTop").on("click", function(){
 		$("html, body").stop().animate({ scrollTop: 0 });
-	});
+	}); */
 });

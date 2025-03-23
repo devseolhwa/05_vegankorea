@@ -5,28 +5,26 @@ $(function(){
         licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
         // fullpage 해제할 브라우저 너비와 높이
         responsiveWidth : 1199,
-        responsiveHeight : 700,
-        anchors : ["visual", "motion", "status", "products"],
+        responsiveHeight : 800,
+        anchors : ["visual", "slogan", "information", "with"],
         sectionsColor : ["#FFF", "#FFF", "#FFF", "#FFF"],
         css3: true,
-        easing: 'easeInOutCubic',
-        easingcss3: 'ease',
+        easing: "easeInOutCubic",
+        easingcss3: "ease",
         scrollingSpeed: 1000,
-        //normalScrollElements: '#section2 .imgMotion',
+        //normalScrollElements: "#section2 .imgMotion",
         scrollOverflow: true,
         navigation : false,
         //navigationPosition : "left",
         //navigationTooltips : ["visual", "motion", "status", "products"],
         loopBottom : false,
         afterLoad : function (anchorLink, index) {
-            
             if($(".section").hasClass("on")){
                     $(".section.active .aos-init").addClass("aos-animate");
             } else {
                 $(".section .aos-init").removeClass("aos-animate");
             }
             $(".section.active .aos-init").addClass("aos-animate");
-
             if (index == 2 || index == 3 || index == 4 || index == 5) {
                 $("#header").addClass("show");
                 $("#btnTop").addClass("show");
@@ -34,17 +32,22 @@ $(function(){
                 $("#header").removeClass("show");
                 $("#btnTop").removeClass("show");
             }
-        },
-        
-        onLeave: function (anchorLink, index, direction) {
-            if (index == 2) {
-                $(".imgGroup").addClass("active");
+            if (index == 4 || index == 5) {
+                $("#section4").addClass("ani");
             } else {
-                $(".imgGroup").removeClass("active");
+                $("#section4").removeClass("ani");
+            }
+        },   
+        onLeave: function (anchorLink, index, direction) {
+            if (direction === "down") {
+                $("#header").addClass("hdn");
+                $(".btnGnbOpen.on").trigger("click");
+            } else if (direction === "up") {
+                $("#header").removeClass("hdn");
             }
             if (index == 3) {
-                $({ val : 0 }).animate({ val : 9833 }, {
-                    duration: 1500,
+                $({ val : 0 }).animate({ val : 6 }, {
+                    duration: 2000,
                     step: function() {
                         var num = numberWithCommas(Math.floor(this.val));
                         $(".countNum1").text(num);
@@ -54,9 +57,8 @@ $(function(){
                         $(".countNum1").text(num);
                     }
                 });
-                                        
                 $({ val : 0 }).animate({ val : 983 }, {
-                    duration: 1500,
+                    duration: 2000,
                     step: function() {
                         var num = numberWithCommas(Math.floor(this.val));
                         $(".countNum2").text(num);
@@ -64,14 +66,30 @@ $(function(){
                     complete: function() {
                         var num = numberWithCommas(Math.floor(this.val));
                         $(".countNum2").text(num);
+                    }
+                });
+                $({ val : 0 }).animate({ val : 9833 }, {
+                    duration: 2000,
+                    step: function() {
+                        var num = numberWithCommas(Math.floor(this.val));
+                        $(".countNum3").text(num);
+                    },
+                    complete: function() {
+                        var num = numberWithCommas(Math.floor(this.val));
+                        $(".countNum3").text(num);
                     }
                 });
                 function numberWithCommas(x) {
                     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }
             }
+            
         },
     });
+
+    $("#btnTop").click(function() {
+		$.fn.fullpage.moveTo("visual");
+	});
 
     $(".swiper-slide video").each(function () {
         const videoElement = this;
