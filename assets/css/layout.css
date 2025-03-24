@@ -136,7 +136,11 @@
 	.mobileShowInline {display: inline-block !important;}
     .mobileHide{display: none !important;}
 
+    #header{height: 70px;}
+    .topBtnGroups{gap: 20px;}
+    .sitemapHeader{height: 70px;}
     .sitemapBody{padding: 25px 20px;}
+    .btnSitemapClose{top: 25px;}
 
     #footer{padding: 40px 0;}
     .footerLogo{margin-bottom: 15px;}

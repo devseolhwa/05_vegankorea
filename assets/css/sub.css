@@ -6,6 +6,8 @@
 #subVisual .visualbg.bg01:before{background-image: url(../images/sub/bg_subVisual01.jpg);}
 #subVisual .visualbg.bg02:before{background-image: url(../images/sub/bg_subVisual02.jpg);}
 #subVisual .visualbg.bg03:before{background-image: url(../images/sub/bg_subVisual03.jpg);}
+#subVisual .visualbg.bg04:before{background-image: url(../images/sub/bg_subVisual04.jpg);}
+#subVisual .visualbg.bg05:before{background-image: url(../images/sub/bg_subVisual05.jpg);}
 #subVisual .visualtext{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: 50px;}
 #subVisual .visualtext h2{font-size: 48px;font-size: 2.5vw;color: #FFF;font-weight: 800;line-height: 140%;letter-spacing: -1px;text-align: center;}
 
@@ -29,7 +31,7 @@
 .greetingVisual .text p{color: #333;font-size: 45px;font-size: 2.3vw;font-weight: 700;line-height: 150%;letter-spacing: -1px;}
 .greetingVisual .text strong{display: block;color: #006E43;font-size: 50px;font-size: 2.6vw;font-weight: 800;line-height: 150%;letter-spacing: -1px;}
 .greetingContents{margin-top: 70px;color: #333;font-size: 21px;font-weight: 400;line-height: 180%;letter-spacing: -0.6px;word-break: keep-all;text-align: center;}
-.greetingContents .sign{color: #333;font-size: 20px;font-weight: 500;line-height: normal;letter-spacing: -0.6px;}
+.greetingContents .sign{display: block;color: #333;font-size: 20px;font-weight: 500;line-height: normal;letter-spacing: -0.6px;}
 .greetingContents .sign span{display: inline-block;margin-left: 5px;color: #333;font-size: 30px;font-weight: 600;line-height: normal;letter-spacing: -0.6px;font-family: "Noto Serif KR";}
 
 @media screen and (max-width: 1499px){
@@ -51,9 +53,10 @@
 }
 
 @media screen and (max-width: 767px){
-    .subContent{margin-bottom: 70px;}
-    #subVisual {padding-top: 0;height: 200px;}
-    #subVisual .visualtext h2 {font-size: 24px;}
+    .subContent{margin-bottom: 60px;}
+    #subVisual {padding-top: 0;height: 300px;}
+    #subVisual .visualtext h2 {font-size: 32px;}
+    #subVisual .visualbg.bg01:before{background-image: url(../images/sub/bg_subVisual01_m.jpg);}
     .snbList > li{width: calc(50% - 25px);}
     .snbList > li:after{height: 26px;}
     .snbList > li.home{width: 50px;height: 50px;}
@@ -62,11 +65,13 @@
     .snbList > li > ul{top: 50px;}
     .snbList > li > ul > li > a{padding: 0 10px;font-size: 13px;line-height: 36px;}
 
-    .greetingVisual .text p{font-size: 4vw;}
-    .greetingVisual .text strong{font-size: 4.2vw;}
-    .greetingContents{margin-top: 30px;font-size: 14px;}
-    .greetingContents .sign{font-size: 13px;}
-    .greetingContents .sign span{font-size: 20px;}
+    .greetingVisual{display: flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;height: auto;padding-top: 0;}
+    .greetingVisual img{position: inherit;left: inherit;top: inherit;order: 2;}
+    .greetingVisual .text{position: inherit;top: inherit;left: inherit;transform: translate(0%, 0%);order: 1;text-align: left;}
+    .greetingVisual .text p{padding: 40px 0;font-size: 26px;color: #000;}
+    .greetingContents{margin-top: 40px;font-size: 16px;text-align: left;}
+    .greetingContents .sign{font-size: 16px;}
+    .greetingContents .sign span{font-size: 22px;}
 }
 
 @keyframes scale{ 
