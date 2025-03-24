@@ -9,6 +9,15 @@ $(function(){
         duration: 1000
     });
 
+    $(window).on("scroll", function(){
+        const wh = $(window).scrollTop();
+        if(wh <= 0){
+            $("#header").removeClass("show");
+        } else {
+            $("#header").addClass("show");
+        }
+    });
+
     // gnb
     $(document).on("mouseenter focus", "#gnb > ul > li", function (e) {
         if ($(".btnGnbOpen").hasClass("on")) {
@@ -83,19 +92,4 @@ $(function(){
             }
         });
     });
-
-    // 상단으로
-    /* let btnTop = document.querySelector("#btnTop"),
-        headerH = 70;
-
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > headerH) {
-            btnTop.classList.add("show");
-        } else {
-            btnTop.classList.remove("show");
-        }
-    });
-    $("#btnTop").on("click", function(){
-		$("html, body").stop().animate({ scrollTop: 0 });
-	}); */
 });
