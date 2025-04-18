@@ -26,7 +26,7 @@
 #section2 .sloganGroup{display: flex;flex-direction: column;flex-wrap: nowrap;align-items: flex-start;justify-content: space-between;width: 100%;height: 100%;}
 #section2 .textGroup strong{display: block;color: #000;font-size: 100px;font-size: 5.2vw;font-weight: 900;line-height: normal;font-family: 'Verdana Pro Black', sans-serif;}
 #section2 .textGroup p{margin-top: 50px;color: #333;font-size: 26px;font-size: 1.4vw;font-weight: 300;line-height: 150%;letter-spacing: -0.2px;text-align: left;word-break: keep-all;}
-#section2 .sloganGroup .btnViewmore{padding-right: 40px;background-image: url(../images/main/icon_viewmore_right.svg);background-position: right center;background-repeat: no-repeat;color: #006E43;text-align: left;font-family: "Montserrat", serif;font-size: 22px;font-size: 1.2vw;font-weight: 400;line-height: 150%;}
+#section2 .sloganGroup .btnViewmore{padding-right: 40px;background-image: url(../images/main/icon_viewmore_right.svg);background-position: right center;background-repeat: no-repeat;color: #00814e;text-align: left;font-family: "Montserrat", serif;font-size: 22px;font-size: 1.2vw;font-weight: 400;line-height: 150%;}
 #section2 .mark{position: absolute;bottom: 180px;left: calc((50% + 400px));width: 401px;height: 402px;display: flex;align-items: center;justify-content: center;}
 #section2 .mark .rotating{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: url(../images/main/img_spin.png) center no-repeat;background-size: cover;-webkit-transform: translateZ(0);transform: translateZ(0);-webkit-animation: Rotating 30s linear infinite;animation: Rotating 30s linear infinite;}
 
@@ -62,7 +62,7 @@
 .withList li dl dt em img{display: block;vertical-align: bottom;}
 .withList li dl dt p{margin-top: 10px;color: #FFF;font-size: 30px;font-weight: 600;line-height: normal;letter-spacing: -0.2px;text-align: center;}
 .withList li dl dd{height: 0;opacity: 0;}
-.withList li dl dd a{display: flex;flex-direction: row;justify-content: center;align-items: center;width: 120px;height: 40px;margin: 24px auto 0;border-radius: 50px;background: #006e43;box-sizing: border-box;color: #FFF;text-align: center;font-size: 15px;font-weight: 500;line-height: normal;letter-spacing: -1px;}
+.withList li dl dd a{display: flex;flex-direction: row;justify-content: center;align-items: center;width: 120px;height: 40px;margin: 24px auto 0;border-radius: 50px;background: #00814e;box-sizing: border-box;color: #FFF;text-align: center;font-size: 15px;font-weight: 500;line-height: normal;letter-spacing: -1px;}
 .withList li dl dd a img{margin-left: 8px;}
 .withList li:hover {width: 28%;}
 .withList li:hover:before{background: rgba(0, 0, 0, 0.6);}
