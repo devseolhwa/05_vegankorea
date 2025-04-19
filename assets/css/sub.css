@@ -82,12 +82,53 @@
 .colorGroup > li > ul > li > span:nth-child(1){width: 72px;font-weight: 700;}
 .colorGroup > li > ul > li > span:nth-child(2){width: calc(100% - 72px);}
 
-.veganeducationWrap{}
-.veganeducationWrap > h5{font-size: 34px;color: #000;font-weight: 700;line-height: 1.529;text-align: center;}
+.veganeducationWrap > h5{font-size: 34px;color: #000;font-weight: 700;line-height: 1.529;text-align: center;word-break: keep-all;}
 .veganeducationWrap > h5 > span{color: #00814e;}
-.veganeducationWrap > .info{width: 100%;padding: 30px;border-radius: 20px;background-color: rgb(248, 248, 248);box-sizing: border-box;font-size: 22px;color: #333;font-weight: 700;line-height: 1.818;text-align: center;}
+.veganeducationList{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;align-items: flex-start;gap: 0 40px;margin-top: 80px;}
+.veganeducationList li{width: calc(50% - 20px);margin-bottom: 100px;}
+.veganeducationList li .img img{width: 100%;vertical-align: bottom;}
+.veganeducationList li .text{margin-top: 40px;}
+.veganeducationList li .text strong{font-size: 28px;color: #000;font-weight: 700;line-height: 1.429;text-align: left;}
+.veganeducationList li .text p{margin-top: 20px;font-size: 20px;color: #000;line-height: 1.8;text-align: left;word-break: keep-all;}
+.veganeducationWrap > .info{width: 100%;padding: 30px;border-radius: 20px;background-color: rgb(248, 248, 248);box-sizing: border-box;font-size: 22px;color: #333;font-weight: 700;line-height: 1.818;text-align: center;word-break: keep-all;}
 .veganeducationWrap > .info > span{color: #00814e;}
 
+.boardTitle{margin-bottom: 120px;}
+.boardTitle h4{font-size: 40px;color: #000;font-weight: 700;line-height: 1.4;text-align: left;}
+.boardTitle p{font-size: 20px;color: #333;line-height: 1.8;text-align: left;}
+.tabList{position: relative;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing: border-box;margin-bottom: 100px;}
+.tabList:before{content: "";position: absolute;bottom: 0;left: 0;width: 100%;height: 1px;background: #00814e;}
+.tabList a{display: flex;align-items: center;justify-content: center;width: 230px;height: 80px;background: #f2f7f5;border: 1px solid #f2f7f5;box-sizing: border-box; font-size: 20px;color: #83a99a;font-weight: 700;line-height: 1.8;text-align: center;}
+.tabList a.active{position: relative;background: #FFF;border: 1px solid #00814e;border-bottom-color: #FFF;color: #00814e;}
+.boardHeader{}
+.boardHeader .totalGroup{}
+.boardHeader .totalGroup strong{font-size: 30px;color: #000;font-weight: 700;line-height: 1.2;text-align: left;}
+.boardHeader .totalGroup p{margin-left: 20px;font-size: 18px;color: #000;line-height: 2;text-align: left;}
+.boardHeader .totalGroup p span{}
+.boardHeader .boardSearchGroup{background: #f8f8f8;}
+.boardHeader .boardSearchGroup .sortSelect{}
+.boardHeader .boardSearchGroup .searchText{font-size: 16px;color: #000;line-height: 1.2;text-align: left;}
+.boardHeader .boardSearchGroup .searchText::placeholder{color: #999;}
+.boardHeader .boardSearchGroup .btnSearch{}
+.faqList ul{}
+.faqList ul li{}
+.faqList ul li.question{}
+.faqList ul li.question a{}
+.faqList ul li.question .cate{}
+.faqList ul li.question .title{}
+.faqList ul li.answer{}
+
+
+/* paging */
+.paging {margin-top: 80px;text-align: center;font-size: 0;}
+.paging a, .paging strong{display: inline-block;width: 38px;height: 38px;line-height: 36px;margin: 0 5px;box-sizing: border-box;font-size: 16px;color: #000;font-weight: 400;vertical-align: middle;text-decoration: none;}
+.paging strong{background:#000;border-radius: 100%;color: #fff;}
+.paging #pagePrev, .paging #pageNext{display: inline-block;background-image: url(../images/icon_prev.svg);background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: middle;}
+.paging #pagePrev{margin-left: 0;}
+.paging #pageNext{margin-right: 0;transform: rotate(180deg);}
+.paging #pageFirst, .paging #pageLast{display: inline-block;background-image: url(../images/icon_first.svg);background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: middle;}
+.paging #pageFirst{margin-left: 0;}
+.paging #pageLast{margin-right: 0;transform: rotate(180deg);}
 
   
 @media screen and (max-width: 1499px){
@@ -149,6 +190,10 @@
     .signatureGroup{margin-top: 40px;}
     .signatureGroup > li + li{margin-top: 30px;}
     .colorGroup > li{padding: 30px;}
+
+    .veganeducationWrap > h5{font-size: 26px;}
+    .veganeducationList{margin-top: 60px;}
+    .veganeducationWrap > .info{font-size: 18px;}
     
 }
 
@@ -196,6 +241,14 @@
     .colorGroup{flex-direction: column;}
     .colorGroup > li{width: 100%;}
 
+
+    .veganeducationWrap > h5{font-size: 18px;}
+    .veganeducationList{margin-top: 45px;gap: 0;}
+    .veganeducationList li{width: 100%;margin-bottom: 50px;}
+    .veganeducationList li .text{margin-top: 30px;}
+    .veganeducationList li .text strong{font-size: 26px;}
+    .veganeducationList li .text p{font-size: 16px;}
+    .veganeducationWrap > .info{padding: 25px;font-size: 15px;}
 }
 
 @keyframes scale{ 
