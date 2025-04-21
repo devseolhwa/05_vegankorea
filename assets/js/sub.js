@@ -22,4 +22,10 @@ $(function(){
 		$("html, body").stop().animate({ scrollTop: 0 });
 	});
 
+    // FAQ
+    $(".question a").on("click", function(){
+        $(this).parent().toggleClass("open").siblings("li").removeClass("open");
+        return false;
+    });
+
 });
