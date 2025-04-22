@@ -8,6 +8,7 @@
 #subVisual .visualbg.bg03:before{background-image: url(../images/sub/bg_subVisual03.jpg);}
 #subVisual .visualbg.bg04:before{background-image: url(../images/sub/bg_subVisual04.jpg);}
 #subVisual .visualbg.bg05:before{background-image: url(../images/sub/bg_subVisual05.jpg);}
+#subVisual .visualbg.bg06:before{background-image: url(../images/sub/bg_subVisual06.jpg);}
 #subVisual .visualtext{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: 50px;}
 #subVisual .visualtext h2{font-size: 44px;color: #FFF;font-weight: 700;line-height: 140%;letter-spacing: -1px;text-align: center;}
 
@@ -98,7 +99,7 @@
 .boardTitle p{font-size: 20px;color: #333;line-height: 1.8;text-align: left;word-break: keep-all;}
 .tabList{position: relative;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;align-items: center;box-sizing: border-box;margin-bottom: 100px;}
 .tabList:before{content: "";position: absolute;bottom: 0;left: 0;width: 100%;height: 1px;background: #00814e;}
-.tabList a{display: flex;align-items: center;justify-content: center;width: 230px;height: 80px;background: #f2f7f5;border: 1px solid #f2f7f5;box-sizing: border-box; font-size: 20px;color: #83a99a;font-weight: 700;line-height: 1.8;text-align: center;}
+.tabList a{display: flex;align-items: center;justify-content: center;width: 230px;height: 80px;background: #f2f7f5;border: 1px solid #f2f7f5;box-sizing: border-box; font-size: 20px;color: #83a99a;font-weight: 700;line-height: 1;text-align: center;}
 .tabList a.active{position: relative;background: #FFF;border: 1px solid #00814e;border-bottom-color: #FFF;color: #00814e;}
 .boardHeader{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: space-between;}
 .boardHeader .totalGroup{display: flex;}
@@ -127,7 +128,7 @@
 .tableList th, .tableList td {height: 60px;padding: 0 10px;box-sizing: border-box;font-size: 15px;text-align: center;}
 .tableList th {position: relative;background: #f8f8f8;color: #000;font-weight: 700;}
 .tableList td {border-bottom: 1px solid #e8e8e8;color: #666;}
-.tableList .btnView{padding-right: 22px;background-image: url(../images/sub/icon_search_green.png);background-position: right center;background-repeat: no-repeat;box-sizing: border-box; font-size: 15px;color: #00814e;font-weight: 700;line-height: 1.2;}
+.tableList .btnView{padding-right: 22px;background-image: url(../images/sub/icon_search_green_sm.png);background-position: right center;background-repeat: no-repeat;box-sizing: border-box;font-size: 15px;color: #00814e;font-weight: 700;line-height: 1.2;}
 .storeList{display: flex;}  
 .storeList li + li:before{content: "";display: inline-block;width: 1px;height: 10px;background: #bbb;margin: 0 8px;}  
 
@@ -160,20 +161,66 @@
 
 .thumbWrap{position: relative;margin-bottom: 100px;}
 .thumbWrap .inner{position: relative;}
-.thumbWrap .title{font-size: 40px;color: #000;font-weight: 700;line-height: 1.4;text-align: left;}
-.thumbWrap .thumbSliderArrow{position: absolute;right: 0;}
-.thumbWrap .thumbSliderArrow .prev{}
-.thumbWrap .thumbSliderArrow .next{}
-.thumbWrap .btnGroup{text-align: center;margin-top: 80px;padding-top: 60px; border-top: 1px solid #e8e8e8;box-sizing: border-box;}
+.thumbWrap .title{padding-top: 14px;font-size: 40px;color: #000;font-weight: 700;line-height: 1.4;text-align: left;}
+.thumbWrap .thumbSliderArrow{position: absolute;right: 0;top: 0;}
+.thumbWrap .thumbSliderArrow button{display: inline-block;width: 68px;height: 68px;line-height: 68px;border: 1px solid #e8e8e8;background-image: url(../images/sub/icon_slider_prev.png);background-position: center;background-repeat: no-repeat;border-radius: 50%;box-sizing: border-box;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: middle;}
+.thumbWrap .thumbSliderArrow .next{transform: rotate(180deg);}
+.thumbSlider{max-width: 1540px;width: 100%;margin: 60px auto 0;padding: 0 20px;box-sizing: border-box;}
+.thumbSlider .swiper-slide{width: 300px;}
+.thumbWrap .btnGroup{text-align: center;margin-top: 80px;padding-top: 60px;border-top: 1px solid #e8e8e8;box-sizing: border-box;}
 .thumbWrap .btnGroup a{display: inline-block;padding: 30px 100px;border: 1px solid #ddd;border-radius: 100px;box-sizing: border-box;background-color: #fff;font-size: 22px;color: #000;line-height: 1.2;text-align: center;}
 
-.certificationTotal{position: relative;font-size: 30px;color: #000;font-weight: 700;line-height: 1.2;text-align: center;}
+.certificationTotal{position: relative;margin-bottom: 55px;font-size: 30px;color: #000;font-weight: 700;line-height: 1.2;text-align: center;}
 .certificationTotal .total{color: #00814e;text-decoration: underline;}
-.certificationTotal .btnTooltip{overflow: hidden;text-indent: -9999px;white-space: nowrap;}
-.certificationTotal .tooltipBox{display: none;}
-.certificationTotal .tooltipBox .dotList li{font-size: 13px;color: #666;line-height: 1.692;text-align: left;}
+.certificationTotal .tooltipWrap{position: relative;display: inline-block;}
+.certificationTotal .btnTooltip{display: inline-block;width: 26px;height: 26px;margin-left: 10px;background-image: url(../images/sub/icon_tooltip.png);background-position: center;background-repeat: no-repeat;box-sizing: border-box;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: -4px;}
+.certificationTotal .tooltipBox{display: none;position: absolute;left: 60px;top: 50%;transform: translateY(-50%);width: 410px;padding: 22px 20px;background-color: #FFF;box-sizing: border-box;box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);}
+.certificationTotal .tooltipBox::before{content: "";position: absolute;width: 0;height: 0;left: -10px;top: 50%;margin-top: -9px;border-right: 10px solid #FFF;border-top: 9px solid transparent;border-bottom: 9px solid transparent;}
+.certificationTotal .btnTooltip.open + .tooltipBox{display: block;}
+.certificationTotal .tooltipBox .dotList li{position: relative;padding-left: 18px;font-size: 13px;color: #666;line-height: 1.692;text-align: left;font-weight: 400;word-break: keep-all;}
+.certificationTotal .tooltipBox .dotList li:before {content: "";position: absolute;top: 10px;left: 10px;display: block;width: 2px;height: 2px;background: #666;border-radius: 100%;}
 
-  
+.searchHeader{display: flex;justify-content: center;padding: 50px 0;background: #f4f4f4;box-sizing: border-box;}
+.searchHeader .searchGroup{display: flex;align-items: center;justify-content: space-between;width: 700px;height: 60px;padding: 0 10px 0 25px;background: #FFF;border-radius: 60px;box-sizing: border-box;}
+.searchHeader .searchGroup .searchText{width: calc(100% - 60px);height: 60px;padding: 0 10px 0 25px;background: transparent;border: 0;font-size: 20px;color: #000;line-height: 1.2;text-align: left;}
+.searchHeader .searchGroup .searchText::placeholder{color: #999;}
+.searchHeader .searchGroup .btnSearch{width: 60px;height: 60px;background-image: url(../images/sub/icon_search.png);background-position: center;background-size: 23px;background-repeat: no-repeat;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
+.searchValue{margin-bottom: 100px; font-size: 34px;color: #000;font-weight: 700;line-height: 1.529;text-align: center;}
+.searchValue span{color: #00814e;font-weight: 700;}
+.searchBody .searchItem + .searchItem{margin-top: 100px;}
+.searchBody .searchItem .tit{margin-bottom: 30px; font-size: 30px;color: #000;font-weight: 700;line-height: 1.2;text-align: left;}
+.searchBody .searchItem .btnGroup{margin-top: 60px;text-align: center;}
+.searchBody .searchItem .btnGroup a{display: inline-block;padding: 30px 100px;border: 1px solid #ddd;border-radius: 100px;box-sizing: border-box;background-color: #fff;font-size: 22px;color: #000;line-height: 1.2;text-align: center;}
+.searchBody .searchItem .tableList th{display: none;}
+.searchBody .searchItem .tableList td {height: 90px;font-size: 22px;color: #000;font-weight: 600;}
+.searchBody .searchItem .tableList .link{text-align: left;}
+.searchBody .searchItem .tableList .btnView{padding-right: 30px;background-image: url(../images/sub/icon_search_green_md.png);font-size: 22px;}
+.searchBody .searchItem .tableList .iconFile{padding-right: 38px;background-image: url(../images/sub/icon_file.png);background-position: right center;background-repeat: no-repeat;box-sizing: border-box;font-size: 22px;color: #00814e;font-weight: 700;line-height: 1.636;}
+.boardthumbList{}
+.boardthumbList ul{border-top: 2px solid #000;box-sizing: border-box;}
+.boardthumbList ul li{border-bottom: 1px solid #e8e8e8;box-sizing: border-box;}
+.boardthumbList ul li a{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: center;padding: 30px;box-sizing: border-box;}
+.boardthumbList .imgArea{width: 300px;}
+.boardthumbList .imgArea img{}
+.boardthumbList .infoArea{width: calc(100% - 360px);margin-left: 60px;}
+.boardthumbList .infoArea .title{font-size: 22px;color: #000;font-weight: 700;line-height: 1.636;text-align: left;word-break: keep-all;}
+.boardthumbList .infoArea .text{margin-top: 20px;font-size: 16px;color: #333;text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 1.75;height: 5.25em;text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;word-break: keep-all;}
+.boardthumbList .infoArea .date{margin-top: 20px;font-size: 16px;color: #000;font-weight: 700;line-height: 1.2;text-align: left;}
+
+.galleryboardList{display: flex;flex-direction: row;flex-wrap: wrap;margin-top: 50px;padding: 50px 0;border-top: 2px solid #000;border-bottom: 1px solid #ddd;box-sizing: border-box;}
+.galleryboardList li{width: calc(33.3% - 20px);margin-left: 30px;margin-top: 50px;}
+.galleryboardList li:nth-child(3n+1){margin-left: 0;}
+.galleryboardList li:nth-child(-n+3){margin-top: 0;}
+.galleryboardList li a{position: relative;display: block;border: 1px solid #ddd;box-sizing: border-box;}
+.galleryboardList li .imgArea{position: relative;width: 100%;height: 315px;overflow: hidden;}
+.galleryboardList li .imgArea img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
+.galleryboardList li .infoArea{padding: 37px 30px 40px;background: #FFF;}
+.galleryboardList li .infoArea .title{font-size: 24px;color: #000;font-weight: 700;line-height: 150%;letter-spacing: -0.6px;word-break: keep-all;}
+.galleryboardList li .infoArea .text{margin: 18px 0;font-size: 18px;color: #666;font-weight: 400;line-height: 150%;letter-spacing: -0.6px;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;height: 3em;text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.galleryboardList li .infoArea .date{font-size: 16px;color: #999;font-weight: 400;line-height: normal;letter-spacing: -0.6px;}
+.galleryboardList li a:hover .infoArea .title{color: #00814e;text-decoration: underline;}
+
+
 @media screen and (max-width: 1499px){
 
     .subContent{margin: 80px 0 100px;}

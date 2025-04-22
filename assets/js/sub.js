@@ -28,4 +28,28 @@ $(function(){
         return false;
     });
 
+    // 인증이미지
+    let thumbSliderCheck = $(".thumbSlider");
+    if (thumbSliderCheck.length) {
+        var swiper = new Swiper(".thumbSlider", {
+            loop: false,
+            speed: 1000,
+            slidesPerView: "auto", // 보여줄 개수
+            spaceBetween: 28, // 슬라이드 사이 여백
+            freeMode: false,
+            allowTouchMove: true,
+            navigation: { // 버튼          
+                nextEl: ".thumbSliderArrow .next",
+                prevEl: ".thumbSliderArrow .prev",
+            },
+            initialSlide: 0, // 시작 위치 (0부터 시작)
+        });
+    }
+
+    // tooltip
+    $(".btnTooltip").on("click", function(){
+        $(this).toggleClass("open");
+        return false;
+    });
+ 
 });
