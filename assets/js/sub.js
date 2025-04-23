@@ -51,5 +51,18 @@ $(function(){
         $(this).toggleClass("open");
         return false;
     });
+
+    $(".tabList a").on("click", function(e) {
+        e.preventDefault();
+
+        // 탭 활성화 처리
+        $(".tabList a").removeClass("active");
+        $(this).addClass("active");
+
+        // 콘텐츠 표시 처리
+        var targetId = $(this).data("tab");
+        $(".tabContents").hide();
+        $("#" + targetId).show();
+    });
  
 });

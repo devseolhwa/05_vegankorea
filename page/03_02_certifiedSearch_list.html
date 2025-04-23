@@ -140,30 +140,29 @@
 
     <div id="sub">
         <section id="subVisual">
-            <div class="visualbg bg02"></div>
+            <div class="visualbg bg03"></div>
             <div class="visualtext">
-                <h2 data-aos="fade-up">비건 교육</h2>
+                <h2 data-aos="fade-up">인증 제품 검색</h2>
             </div>
         </section><!-- subVisual END -->
         <div class="snbListWrap">
             <ul class="snbList">
                 <li class="home"><a href="../index.html"><img src="../assets/images/sub/icon_home.png" alt="홈 아이콘"></a></li>
                 <li>
-                    <button type="button">SERVICES</button>
+                    <button type="button">CERTIFICATION</button>
                     <ul class="depth02">
                         <li><a href="#">ABOUT KVCS</a></li>
-                        <li class="on"><a href="#">SERVICES</a></li>
-                        <li><a href="#">CERTIFICATION</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li class="on"><a href="#">CERTIFICATION</a></li>
                         <li><a href="#">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </li>
                 <li>
-                    <button type="button">비건 교육</button>
+                    <button type="button">인증 제품 검색</button>
                     <ul class="depth02">
-                        <li><a href="#">비건 인증</a></li>
-                        <li class="on"><a href="#">비건 교육</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">인증 현황</a></li>
+                        <li class="on"><a href="#">인증 제품 검색</a></li>
                     </ul>
                 </li>
             </ul><!-- snbList END -->
@@ -171,46 +170,154 @@
         <div class="subContent">
             <div class="inner">
                 <!-- 컨텐츠 내용 -->
-                <div class="veganeducationWrap">
-                    <h5>
-                        한국비건인증원은 실무를 수행하는 전문적인 비건 인증 심사관이 <br class="mobileHide" />
-                        비건 인증 업무의 이해와 도움을 드리기 위한 교육을 진행하고 있습니다.<br />
-                        교육은 한국비건인증원에서 주관하는 <span>정기 교육</span>과 요청에 의한 <span>맞춤형 교육</span>으로 운영됩니다.
-                    </h5>
-                    <ul class="veganeducationList">
-                        <li>
-                            <div class="img"><img src="../assets/images/sub/img_veganeducation01.png" alt=""></div>
-                            <div class="text">
-                                <strong>기업 대상 교육 : 정기</strong>
-                                <p>비건 인증 실무 및 연구 동향, 전망 등 비거니즘의 방향성에 대한 강의</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><img src="../assets/images/sub/img_veganeducation02.png" alt=""></div>
-                            <div class="text">
-                                <strong>신규 인증 교육 : 맞춤형</strong>
-                                <p>인증 기준 및 절차에 대한 전반 이해를 위한 비거니즘 개괄 강의</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><img src="../assets/images/sub/img_veganeducation03.png" alt=""></div>
-                            <div class="text">
-                                <strong>현장 조사 교육 : 맞춤형</strong>
-                                <p>비건 제품 제조 현장의 올바른 현장 관리와 효율적인 시스템 인증 관리를 위한 강의</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img"><img src="../assets/images/sub/img_veganeducation04.png" alt=""></div>
-                            <div class="text">
-                                <strong>소비자 대상 교육 : 맞춤형</strong>
-                                <p>비건 제품에 대한 소개 및 트렌드,  라이프 스타일에 대한 강의</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="info">
-                        교육 요청을 희망하시는 경우, 한국비건인증원 공식 이메일(<span>official@vegan- korea.com</span>)로 문의 부탁드립니다.
+                <div class="tabList">
+                    <a href="#" class="active">전체</a>
+                    <a href="#">식품</a>
+                    <a href="#">화장품</a>
+                    <a href="#">생활용품</a>
+                    <a href="#">의약외품</a>
+                    <a href="#">원료</a>
+                </div>
+                <ul class="dotList">
+                    <li>제품 정보는 기업에서 정보 공개에 동의한 제품만 확인 가능합니다.  따라서 기업의 실제 인증 제품 수와 차이가 있을 수 있습니다.</li>
+                    <li>상세보기 클릭 시 해당 기업의 인증 제품 페이지로 이동합니다.</li>
+                </ul>
+                <div class="boardHeader">
+                    <div class="totalGroup">
+                        <strong>전체</strong>
+                        <p>총 게시물 <span>10</span>개</p><p><span>1</span> / 1  Page</p>
                     </div>
-                </div><!-- veganeducationWrap END -->
+                    <div class="boardSearchGroup">
+                        <select class="sortSelect">
+                            <option value="">검색항목</option>
+                            <option value="">기업명</option>
+                            <option value="">제품명</option>
+                            <option value="">인증번호</option>
+                        </select>
+                        <input type="text" class="searchText" placeholder="검색어를 입력해주세요." title="검색어 입력" />
+                        <button type="button" class="btnSearch">검색하기</button>
+                    </div>
+                    <div class="boardControl">
+                        <select class="sortSelect">
+                            <option value="">최근등록순</option>
+                            <option value="">인증번호 내림차순</option>
+                            <option value="">인증번호 올림차순</option>
+                        </select>
+                        <select class="sortSelect">
+                            <option value="">10개씩 보기</option>
+                            <option value="">20개씩 보기</option>
+                            <option value="">50개씩 보기</option>
+                        </select>
+                    </div>
+                </div><!-- boardHeader END -->
+                <div class="boardList">
+                    <table class="tableList">
+                        <caption>인증제품 게시판 목록이며 품목, 기업명, 인증번호, 제품명, 상세정보 제공</caption>
+                        <colgroup>
+                            <col style="width:205px;">
+                            <col style="width:260px;">
+                            <col style="width:205px;">
+                            <col style="width:600px;">
+                            <col style="width:230px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">품목</th>
+                                <th scope="col">기업명</th>
+                                <th scope="col">인증번호</th>
+                                <th scope="col">제품명</th>
+                                <th scope="col">상세정보</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>화장품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-001</td>
+                                <td class="ta_l">비건 저자극 무기자차 선크림 50ml</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>화장품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-002</td>
+                                <td class="ta_l">톤업 오가닉 임산부 선크림</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>식품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-003</td>
+                                <td class="ta_l">우먼 더블업 멀티 비타민 x3개입</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>식품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-004</td>
+                                <td class="ta_l">올인원 멀티비타민 미네랄 맥스 종합비타민 영양제</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>생활용품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-005</td>
+                                <td class="ta_l">탈모 방지 예방 비건 샴푸 500ml</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>화장품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-006</td>
+                                <td class="ta_l">비건 저자극 무기자차 선크림 50ml</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>화장품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-007</td>
+                                <td class="ta_l">톤업 오가닉 임산부 선크림</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>식품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-008</td>
+                                <td class="ta_l">우먼 더블업 멀티 비타민 x3개입</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>식품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-009</td>
+                                <td class="ta_l">올인원 멀티비타민 미네랄 맥스 종합비타민 영양제</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>생활용품</td>
+                                <td>주식회사 가나다라마바사</td>
+                                <td>C001-010</td>
+                                <td class="ta_l">탈모 방지 예방 비건 샴푸 500ml</td>
+                                <td><a href="#" class="btnView">상세보기</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- boardList END -->
+                <!-- 
+                    PC에선 1/2/3/4/5 총 번호 5개 노출 
+                    모바일에선 1/2/3 3개 노출  
+                 -->
+                <div class="paging">
+                    <a href="#pageFirst" id="pageFirst">처음</a>
+                    <a href="#pagePrev" id="pagePrev">이전</a>
+                    <a href="#" title="1페이지">1</a>
+                    <a href="#" title="2페이지">2</a>
+                    <strong>3</strong>
+                    <a href="#" title="4페이지">4</a>
+                    <a href="#" title="5페이지">5</a>
+                    <a href="#pageNext" id="pageNext">다음</a>
+                    <a href="#pageLast" id="pageLast">마지막</a>
+                </div>
             </div><!-- inner END -->
         </div><!-- subContent END -->
     </div><!-- sub END -->
