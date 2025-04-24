@@ -1,20 +1,5 @@
 $(function(){
 
-    /* $(".visualSwiper video").each(function () {
-        const videoElement = this;
-        
-        // 동영상 메타데이터 로드 후 실행
-        videoElement.addEventListener("loadedmetadata", function () {
-            const videoDuration = Math.ceil(videoElement.duration * 1000); // ms 단위로 변환
-            const swiperSlide = $(videoElement).closest(".swiper-slide");
-            
-            // 동영상 길이를 data-swiper-autoplay 속성에 설정
-            swiperSlide.attr("data-swiper-autoplay", videoDuration);
-            console.log(videoDuration);
-
-            videovisual.update();
-        });
-    }); */
     let videovisual = new Swiper(".visualSwiper", {
         effect : "fade",
         centeredSlides: true,
@@ -52,7 +37,7 @@ $(function(){
         $(".visualSwiper .swiper-slide").find("video").get(0).play();
         $(".pagination button").eq(0).addClass("on");
     };
-    setTimeout(firstSet, 100);
+    setTimeout(firstSet, 3500);
 
     // fullpage
     $("#fullpage").fullpage({

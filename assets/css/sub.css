@@ -105,7 +105,7 @@
 .boardTitle p{font-size: 20px;color: #333;line-height: 1.8;text-align: left;word-break: keep-all;}
 .textSm{font-size: 20px;color: #333;line-height: 1.5;text-align: left;word-break: keep-all;}
 .textMd{margin-top: 70px;font-size: 28px;color: #000;line-height: 1.5;font-weight: 700;text-align: left;word-break: keep-all;}
-.tabList{position: relative;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;align-items: center;box-sizing: border-box;margin-bottom: 100px;}
+.tabList{position: relative;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: center;box-sizing: border-box;margin-bottom: 100px;}
 .tabList a{display: flex;align-items: center;justify-content: center;flex: 1 auto;height: 80px;background: #f2f7f5;border: 1px solid #f2f7f5;box-sizing: border-box;font-size: 20px;color: #83a99a;font-weight: 700;line-height: 1;text-align: center;word-break: keep-all;}
 .tabList a.active{position: relative;background: #FFF;border: 1px solid #00814e;color: #00814e;}
 .tabContents{display: none;}
@@ -178,9 +178,10 @@
 
 .thumbWrap{position: relative;margin-bottom: 100px;}
 .thumbWrap .inner{position: relative;}
-.thumbWrap .title{padding-top: 14px;font-size: 40px;color: #000;font-weight: 700;line-height: 1.4;text-align: left;}
+.thumbWrap .title{padding-top: 14px;font-size: 40px;color: #000;font-weight: 700;line-height: 1.4;text-align: left;word-break: keep-all;}
 .thumbWrap .thumbSliderArrow{position: absolute;right: 0;top: 0;}
 .thumbWrap .thumbSliderArrow button{display: inline-block;width: 68px;height: 68px;line-height: 68px;border: 1px solid #e8e8e8;background-image: url(../images/sub/icon_slider_prev.png);background-position: center;background-repeat: no-repeat;border-radius: 50%;box-sizing: border-box;overflow: hidden;text-indent: -9999px;white-space: nowrap;vertical-align: middle;}
+.thumbWrap .thumbSliderArrow button + button{margin-left: 15px;}
 .thumbWrap .thumbSliderArrow .next{transform: rotate(180deg);}
 .thumbSlider{max-width: 1540px;width: 100%;margin: 60px auto 0;padding: 0 20px;box-sizing: border-box;}
 .thumbSlider .swiper-slide{width: 300px;}
@@ -213,12 +214,11 @@
 .searchBody .searchItem .tableList .link{text-align: left;}
 .searchBody .searchItem .tableList .btnView{padding-right: 30px;background-image: url(../images/sub/icon_search_green_md.png);font-size: 22px;}
 .searchBody .searchItem .tableList .iconFile{padding-right: 38px;background-image: url(../images/sub/icon_file.png);background-position: right center;background-repeat: no-repeat;box-sizing: border-box;font-size: 22px;color: #00814e;font-weight: 700;line-height: 1.636;}
-.boardthumbList{}
 .boardthumbList ul{border-top: 2px solid #000;box-sizing: border-box;}
 .boardthumbList ul li{border-bottom: 1px solid #e8e8e8;box-sizing: border-box;}
 .boardthumbList ul li a{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: center;padding: 30px;box-sizing: border-box;}
 .boardthumbList .imgArea{width: 300px;}
-.boardthumbList .imgArea img{}
+.boardthumbList .imgArea img{width: 100%;}
 .boardthumbList .infoArea{width: calc(100% - 360px);margin-left: 60px;}
 .boardthumbList .infoArea .title{font-size: 22px;color: #000;font-weight: 700;line-height: 1.636;text-align: left;word-break: keep-all;}
 .boardthumbList .infoArea .text{margin-top: 20px;font-size: 16px;color: #333;text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 1.75;height: 5.25em;text-align: left;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;word-break: keep-all;}
@@ -325,6 +325,9 @@
     .processWrap{padding: 100px 50px;}
     .processWrap ul:before{left: 74px;}
     .processWrap .textArea .text span{margin-bottom: 10px;}
+
+    .faqList ul li.question .title{font-size: 20px;}
+    .searchBody .searchItem .tableList td{font-size: 20px;}
 }
 
 @media screen and (max-width: 1199px){
@@ -368,6 +371,11 @@
 
     .paging{margin-top: 65px;}
     .paging a, .paging strong{margin: 0 2px;}
+
+    .thumbWrap .title{padding-top: 5px;font-size: 35px;}
+    .thumbWrap .thumbSliderArrow button{width: 60px;height: 60px;line-height: 60px;}
+    .certifiedTotal .tooltipBox{left: auto;right: -14px;top: -148px;transform: translateY(0%);width: 300px;padding: 10px 8px;}
+    .certifiedTotal .tooltipBox:before{left: auto;top: auto;bottom: -9px;right: 18px;margin-top: 0;border-right: 9px solid transparent;border-top: 10px solid #FFF;border-left: 9px solid transparent;border-bottom: 0;}
 
     .galleryboardList{padding: 30px 0;}
     .galleryboardList li{width: calc(50% - 10px);margin-left: 20px;margin-top: 20px;}
@@ -447,11 +455,11 @@
     .boardTitle h4{font-size: 26px;}
     .boardTitle p{margin-top: 10px;font-size: 16px;}
     .tabList{margin-bottom: 50px;}
-    .tabList a{flex: 50%;height: 44px;font-size: 16px;}
-    .tabList + .dotList{margin: 30px 0 80px;}
+    .tabList a{flex: 50% 0;height: 44px;font-size: 16px;}
+    .tabList + .dotList{margin: 30px 0 60px;}
     .dotList.green > li{font-size: 16px;}
     .dotList.green > li:before{top: 11px;}
-    .boardHeader {gap: 15px;}
+    .boardHeader {justify-content: flex-end;gap: 15px;}
     .boardHeader .totalGroup strong{display: none;}
     .boardHeader .totalGroup p{margin-left: 0;font-size: 16px;line-height: 1;}
     .boardHeader .totalGroup p:last-child{margin-left: 10px;}
@@ -459,14 +467,26 @@
     .boardHeader .boardSearchGroup .sortSelect{width: 80px;height: 44px;font-size: 15px;}
     .boardHeader .boardSearchGroup .searchText{width: calc(100% - 124px);height: 44px;font-size: 15px;}
     .boardHeader .boardSearchGroup .btnSearch{width: 44px;height: 44px;background-size: 17px;}
+    .boardHeader .boardControl{gap: 10px;}
     .boardHeader .boardControl .sortSelect{font-size: 16px;}
     .boardHeader + .faqList{margin-top: 40px;}
     .faqList ul li.question a{align-items: flex-start;flex-direction: column;flex-wrap: nowrap;padding: 20px 6px;}
-    .faqList ul li.question .cate{width: 100%;padding: 0;font-size: 16px;}
+    .faqList ul li.question .cate{width: 100%;padding: 0 0 10px;font-size: 16px;}
     .faqList ul li.question .title{position: relative;width: 100%;padding: 0 20px 0 0;font-size: 20px;line-height: 1.5;}
     .faqList ul li.question .title:after{right: 0;top: 11px;width: 15px;height: 9px;margin-top: 0;background-size: 100%;}
     .faqList ul li.answer{padding: 30px 25px;font-size: 16px;}
     .paging{margin-top: 50px;}
+
+    .tableList colgroup,
+    .tableList thead{display: none;}
+    .tableList .mNone{display: none;}
+    .tableList tr{position: relative;display: block;padding: 25px 0 30px;border-bottom: 1px solid #DDD;box-sizing: border-box;}
+    .tableList tr:has(.btnView){padding: 25px 50px 30px 0;}
+    .tableList td{display: inline-block;height: auto;margin-top: 5px;padding: 0;border-bottom: 0;font-size: 16px;text-align: left;}
+    .tableList .bar:after{content: "";display: inline-block;width: 1px;height: 10px;margin: 0 5px 0 8px;background-color: #ddd;}
+    .tableList td.title{display: block;font-size: 20px;color: #000;font-weight: 700;}
+    .tableList .btnView{position: absolute;right: 0;top: 50%;transform: translateY(-50%);width: 50px;height: 50px;padding-right: 0 !important;background-color: #f2f7f5;background-image: url(../images/sub/icon_search_green_md.png);background-position: center;border-radius: 100%;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
+    .tableList td:has( > .storeList){display: block;}
 
     .barTitle strong{font-size: 26px;}
     .barTitle strong span{font-size: 17px;}
@@ -480,6 +500,27 @@
     .certifiedProduct li .num span{font-size: 23px;}
     .graphArea{margin-top: 55px;overflow: auto;}
     .graphArea img{width: 1500px;max-width: max-content;}
+
+    .thumbWrap .title{font-size: 30px;}
+    .thumbWrap .thumbSliderArrow{display: none;}
+    .thumbSlider{margin: 30px auto 0;}
+    .thumbWrap .btnGroup{margin-top: 50px;padding-top: 40px;}
+    .thumbWrap .btnGroup a{padding: 20px 70px;font-size: 20px;}
+    .certifiedTotal{margin-bottom: 40px;}
+
+    .searchHeader{padding: 38px 0;}
+    .searchHeader .searchGroup{width: calc(100% - 40px);height: 44px;padding: 0 10px 0 0;}
+    .searchHeader .searchGroup .searchText{height: 44px;padding: 0 0 0 20px;font-size: 16px;}
+    .searchHeader .searchGroup .btnSearch{width: 44px;height: 44px;background-size: 19px;}
+    .searchValue{margin-bottom: 50px;font-size: 23px;}
+    .searchBody .searchItem .tit{margin-bottom: 25px;font-size: 26px;}
+    .searchBody .searchItem .tableList td{height: auto;font-size: 16px;color: #666;font-weight: 400;}
+    .searchBody .searchItem .tableList td.title{display: block;font-size: 20px;color: #000;font-weight: 700;}
+    .searchBody .searchItem .tableList .iconFile{position: absolute;right: 0;top: 50%;transform: translateY(-50%);width: 50px;height: 50px;padding-right: 0;background-color: #f2f7f5;background-position: center;border-radius: 100%;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
+    .searchBody .searchItem .tableList tr:has(.iconFile){padding: 25px 50px 30px 0;}
+    .searchBody .searchItem .tableList td:has(.iconFile){display: block;margin-top: 0;}
+    .searchBody .searchItem .btnGroup{margin-top: 40px;}
+    .searchBody .searchItem .btnGroup a{padding: 20px 70px;font-size: 20px;}
 
     .galleryboardList{margin-top: 40px;padding: 0 0 20px;}
     .galleryboardList li{width: 100%;margin-left: 0 !important;margin-top: 20px !important;}
@@ -524,7 +565,13 @@
     .managementList .iconArea{display: none;}
     .managementList .textArea{width: 100%;padding-left: 0;}
     .managementList .textArea .title{font-size: 20px;}
-      
+
+    .boardthumbList ul li a{padding: 30px 0;}
+    .boardthumbList .imgArea{width: 100%;}
+    .boardthumbList .infoArea{width: 100%;margin-left: 0;}
+    .boardthumbList .infoArea .title{margin-top: 10px;font-size: 20px;}
+    .boardthumbList .infoArea .text{margin-top: 10px;}
+    .boardthumbList .infoArea .date{margin-top: 10px;}
 }
 
 @keyframes scale{ 

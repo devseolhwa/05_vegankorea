@@ -29,6 +29,7 @@ button {border: 0;background-color: transparent;}
 ::selection{background-color: #efefef;color: #222;}
 ::-moz-selection {background-color: #efefef;color: #222;}
 ::-webkit-selection {background-color: #efefef;color: #222;}
+:focus {outline: none;}
 
 /* hidden */
 .clearfix:after{content: "";display: block;clear: both;}
