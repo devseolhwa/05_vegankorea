@@ -27,7 +27,7 @@ $(function(){
         const index = $target.index();
         const movePercentage = 100;
     
-        console.log(index);
+        //console.log(index);
         $(".move_box").css("transform", `translateX(${movePercentage * index}%)`);
         $("#gnb").addClass("on");
 

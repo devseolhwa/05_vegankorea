@@ -1,5 +1,5 @@
 $(function(){
-    
+
     // snb
 	$(".snbList li button").on("click", function(){
 		$(this).parent("li").toggleClass("active").siblings("li").removeClass("active");
@@ -63,6 +63,51 @@ $(function(){
         var targetId = $(this).data("tab");
         $(".tabContents").hide();
         $("#" + targetId).show();
+
+        $(".tabContents .aos-init").removeClass("aos-animate");
+        $(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","0s");
+        setTimeout(() => {
+            $(`[data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]`).css("transition-duration","1s");
+            $(".tabContents .aos-init").addClass("aos-animate");
+        } , 100);
     });
+
+    // 인증현황 카운트
+    $({ val : 0 }).animate({ val : 6 }, {
+        duration: 2000,
+        step: function() {
+            var num = numberWithCommas(Math.floor(this.val));
+            $(".countNum1").text(num);
+        },
+        complete: function() {
+            var num = numberWithCommas(Math.floor(this.val));
+            $(".countNum1").text(num);
+        }
+    });
+    $({ val : 0 }).animate({ val : 983 }, {
+        duration: 2000,
+        step: function() {
+            var num = numberWithCommas(Math.floor(this.val));
+            $(".countNum2").text(num);
+        },
+        complete: function() {
+            var num = numberWithCommas(Math.floor(this.val));
+            $(".countNum2").text(num);
+        }
+    });
+    $({ val : 0 }).animate({ val : 9833 }, {
+        duration: 2000,
+        step: function() {
+            var num = numberWithCommas(Math.floor(this.val));
+            $(".countNum3").text(num);
+        },
+        complete: function() {
+            var num = numberWithCommas(Math.floor(this.val));
+            $(".countNum3").text(num);
+        }
+    });
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
  
 });

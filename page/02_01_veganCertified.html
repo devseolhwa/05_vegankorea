@@ -6,7 +6,6 @@
     <title>(주)한국비건인증원</title>
     <link rel="SHORTCUT ICON" href="../assets/images/favicon.png">
     
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/aos.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
@@ -14,12 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
 
     <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/lib/ScrollTrigger.min.js"></script>
-    <script src="../assets/js/lib/gsap.min.js"></script>
+    <script src="../assets/js/lib/ScrollToPlugin.min.js"></script>
+    <script src="../assets/js/lib/TweenMax.min.js"></script>
     <script src="../assets/js/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
-    <script src="../assets/js/jquery.fullPage.js"></script>
     <script src="../assets/js/lib/swiper.min.js"></script>
     <script src="../assets/js/ui.js"></script>
     <script src="../assets/js/sub.js"></script>
@@ -151,19 +147,19 @@
                 <li>
                     <button type="button">SERVICES</button>
                     <ul class="depth02">
-                        <li><a href="#">ABOUT KVCS</a></li>
-                        <li class="on"><a href="#">SERVICES</a></li>
-                        <li><a href="#">CERTIFICATION</a></li>
-                        <li><a href="#">WHAT'S NEW</a></li>
+                        <li><a href="01_01_greeting.html">ABOUT KVCS</a></li>
+                        <li class="on"><a href="02_01_veganCertified.html">SERVICES</a></li>
+                        <li><a href="03_01_certifiedStatus.html">CERTIFICATION</a></li>
+                        <li><a href="04_gallery_list.html">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </li>
                 <li>
                     <button type="button">비건 인증</button>
                     <ul class="depth02">
-                        <li class="on"><a href="#">비건 인증</a></li>
-                        <li><a href="#">비건 교육</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li class="on"><a href="02_01_veganCertified.html">비건 인증</a></li>
+                        <li><a href="02_02_veganEducation.html">비건 교육</a></li>
+                        <li><a href="02_03_FAQ.html">FAQ</a></li>
                     </ul>
                 </li>
             </ul><!-- snbList END -->
@@ -171,7 +167,7 @@
         <div class="subContent">
             <div class="inner">
                 <!-- 컨텐츠 내용 -->
-                <div class="tabList">
+                <div class="tabList" data-aos="fade-down">
                     <a href="#" class="active" data-tab="tabContents01">비건 인증 소개</a>
                     <a href="#" data-tab="tabContents02">비건 인증 기준</a>
                     <a href="#" data-tab="tabContents03">비건 인증 절차</a>
@@ -181,7 +177,7 @@
                     <div class="barTitle" data-aos="fade-left">
                         <strong>비건 인증이란?</strong>
                     </div>
-                    <div class="certifiedIntroduction" data-aos="fade-up">
+                    <div class="certifiedIntroduction" data-aos="fade-right">
                         <div class="textArea">
                             한국비건인증원에서 인증하는 '비건(VEGAN)'인증은 동물 유래 원재료를 이용하지 않고, 교차오염을 방지하며, 동물실험을 실시하지 않는 3가지 기준으로 부여하는 인증입니다.<br />
                             우리가 일상생활에서 소비하는 식품, 화장품, 생활용품 등의 제품과 이를 제조 시 사용되는 원료는, 소비자들은 명확하게 알 수 없지만 제조 과정 중 정제, 여과, 화학반응 등을 거치며 다양한 동물 유래 원료가 사용될 수 있습니다.<br />
@@ -199,19 +195,19 @@
                         <strong>비건 인증 기준</strong>
                     </div>
                     <ul class="numList">
-                        <li data-aos="fade-up">동물 유래 원료를 이용하지 않아야 합니다.
+                        <li data-aos="fade-left">동물 유래 원료를 이용하지 않아야 합니다.
                             <ul class="dotList green mt10">
                                 <li>제조·가공 과정에서 동물 유래 원료가 사용되지 않아야 합니다.</li>
                                 <li>특정 성분의 제조를 위하여 동물 유래 원료를 이용하는 등 직·간접적 경우를 포함합니다.</li>
                             </ul>
                         </li>
-                        <li data-aos="fade-up">동물을 이용한 실험을 해서는 안 됩니다.
+                        <li data-aos="fade-left" data-aos-delay="100">동물을 이용한 실험을 해서는 안 됩니다.
                             <ul class="dotList green mt10">
                                 <li>제품에 대한 실험이나 연구에 동물을 직·간접적으로 이용하지 않아야 합니다.</li>
                                 <li>동물 실험을 위한 원재료 사용이나 타사에 의뢰한 형태 등의 위탁 실험도 금지합니다.</li>
                             </ul>
                         </li>
-                        <li data-aos="fade-up">제품 생산 공정 전 중 후 교차오염을 방지해야 합니다.
+                        <li data-aos="fade-left" data-aos-delay="200">제품 생산 공정 전 중 후 교차오염을 방지해야 합니다.
                             <ul class="dotList green mt10">
                                 <li>제품의 생산시설(기계, 기구, 용기) 간 교차오염이 발생하지 않아야 합니다.</li>
                                 <li>논 비건 제품과 생산 시설을 공유하는 경우, 철저한 세척 및 생산 시간이 구분되는 등 적절한 관리 기준 수립 또는 검증이 이루어져야 합니다.</li>
@@ -223,9 +219,9 @@
                     <div class="barTitle" data-aos="fade-left">
                         <strong>비건 인증 개요</strong>
                     </div>
-                    <p class="textMd mainColorText mt10" data-aos="fade-up">한국비건인증원은 엄격한 인증 기준을 통해 적합한 제품에 비건 인증 마크를 부여하고 있습니다.</p>
-                    <p class="textMd" data-aos="fade-left">비건 인증 신청 자격</p>
-                    <p class="textSm mt15" data-aos="fade-up">한국비건인증원의 비건 인증은(수출 대상 제품, 해외 소재 기업 별도 문의) 제품에 대한 권한(제조 또는 판매)이 있는 기업이 신청 가능합니다.</p>
+                    <p class="textMd mainColorText mt10" data-aos="fade-left" data-aos-delay="100">한국비건인증원은 엄격한 인증 기준을 통해 적합한 제품에 비건 인증 마크를 부여하고 있습니다.</p>
+                    <p class="textMd" data-aos="fade-left" data-aos-delay="200">비건 인증 신청 자격</p>
+                    <p class="textSm mt15" data-aos="fade-left" data-aos-delay="300">한국비건인증원의 비건 인증은(수출 대상 제품, 해외 소재 기업 별도 문의) 제품에 대한 권한(제조 또는 판매)이 있는 기업이 신청 가능합니다.</p>
                     <table class="dataTable mt30 mobileHide" data-aos="fade-up">
                         <caption>한국비건인증원 비건 인증 신청 자격 안내표(신청 가능한 영업의 종류, 식품 (메뉴 포함), 화장품, 생활용품·의약외품·원료·농산물 항목으로 구성)</caption>
                         <colgroup>
@@ -370,7 +366,7 @@
                         <strong>사후 관리</strong>
                     </div>
                     <ul class="managementList">
-                        <li data-aos="fade-left">
+                        <li data-aos="fade-left" data-aos-delay="100">
                             <div class="iconArea"><img src="../assets/images/sub/icon_management01.png" alt=""></div>
                             <div class="textArea">
                                 <p class="title">비건 인증 연장</p>
@@ -380,7 +376,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li data-aos="fade-left">
+                        <li data-aos="fade-left" data-aos-delay="200">
                             <div class="iconArea"><img src="../assets/images/sub/icon_management02.png" alt=""></div>
                             <div class="textArea">
                                 <p class="title">비건 인증 변경</p>
@@ -390,7 +386,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li data-aos="fade-left">
+                        <li data-aos="fade-left" data-aos-delay="300">
                             <div class="iconArea"><img src="../assets/images/sub/icon_management03.png" alt=""></div>
                             <div class="textArea">
                                 <p class="title">비건 인증 취소</p>
@@ -415,10 +411,10 @@
                 <div>
                     <ul class="footerMenu">
                         <li><a href="../index.html">HOME</a></li>
-                        <li><a href="greeting.html">ABOUT KVCS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CERTIFICATION</a></li>
-                        <li><a href="#">WHAT'S NEW</a></li>
+                        <li><a href="01_01_greeting.html">ABOUT KVCS</a></li>
+                        <li><a href="02_01_veganCertified.html">SERVICES</a></li>
+                        <li><a href="03_01_certifiedStatus.html">CERTIFICATION</a></li>
+                        <li><a href="04_gallery_list.html">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                     <p class="address">(우04799) 서울특별시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호</p>

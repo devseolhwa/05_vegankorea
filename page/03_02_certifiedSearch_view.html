@@ -6,7 +6,6 @@
     <title>(주)한국비건인증원</title>
     <link rel="SHORTCUT ICON" href="../assets/images/favicon.png">
     
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/aos.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
@@ -14,12 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
 
     <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/lib/ScrollTrigger.min.js"></script>
-    <script src="../assets/js/lib/gsap.min.js"></script>
+    <script src="../assets/js/lib/ScrollToPlugin.min.js"></script>
+    <script src="../assets/js/lib/TweenMax.min.js"></script>
     <script src="../assets/js/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
-    <script src="../assets/js/jquery.fullPage.js"></script>
     <script src="../assets/js/lib/swiper.min.js"></script>
     <script src="../assets/js/ui.js"></script>
     <script src="../assets/js/sub.js"></script>
@@ -151,18 +147,18 @@
                 <li>
                     <button type="button">CERTIFICATION</button>
                     <ul class="depth02">
-                        <li><a href="#">ABOUT KVCS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li class="on"><a href="#">CERTIFICATION</a></li>
-                        <li><a href="#">WHAT'S NEW</a></li>
+                        <li><a href="01_01_greeting.html">ABOUT KVCS</a></li>
+                        <li><a href="02_01_veganCertified.html">SERVICES</a></li>
+                        <li class="on"><a href="03_01_certifiedStatus.html">CERTIFICATION</a></li>
+                        <li><a href="04_gallery_list.html">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </li>
                 <li>
                     <button type="button">인증 제품 검색</button>
                     <ul class="depth02">
-                        <li><a href="#">인증 현황</a></li>
-                        <li class="on"><a href="#">인증 제품 검색</a></li>
+                        <li><a href="03_01_certifiedStatus.html">인증 현황</a></li>
+                        <li class="on"><a href="03_02_certifiedSearch_list.html">인증 제품 검색</a></li>
                     </ul>
                 </li>
             </ul><!-- snbList END -->
@@ -171,13 +167,13 @@
             <!-- 컨텐츠 내용 -->
             <div class="thumbWrap">
                 <div class="inner">
-                    <h5 class="title">주식회사 가나다라마바사의 인증 정보</h5>
-                    <div class="thumbSliderArrow">
+                    <h5 class="title" data-aos="fade-left">주식회사 가나다라마바사의 인증 정보</h5>
+                    <div class="thumbSliderArrow" data-aos="fade-right">
                         <button type="button" class="prev">이전</button>
                         <button type="button" class="next">다음</button>
                     </div><!-- thumbSliderArrow END -->
                 </div>
-                <div class="thumbSlider">
+                <div class="thumbSlider" data-aos="fade-up">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="../assets/images/sub/ex01.png" alt="">
@@ -207,13 +203,13 @@
                 </div><!-- thumbSlider end -->
                 <div class="inner">
                     <div class="btnGroup">
-                        <a href="#">목록</a>
+                        <a href="#" data-aos="fade-up">목록</a>
                     </div>
                 </div>
             </div><!-- thumbWrap END -->
 
             <div class="inner">
-                <div class="certifiedTotal">
+                <div class="certifiedTotal" data-aos="fade-up" data-aos-delay="100">
                     인증제품 <span class="total">300</span>건
                     <div class="tooltipWrap">
                          <a href="#" class="btnTooltip">주요사항</a>
@@ -225,7 +221,7 @@
                         </div>
                     </div>
                 </div><!-- certifiedTotal END -->
-                <div class="boardList">
+                <div class="boardList" data-aos="fade-up">
                     <table class="tableList">
                         <caption>인증제품 게시판 목록이며 품목, 기업명, 인증번호, 제품명, 인증기간, 판매처 제공</caption>
                         <colgroup>
@@ -332,10 +328,10 @@
                 <div>
                     <ul class="footerMenu">
                         <li><a href="../index.html">HOME</a></li>
-                        <li><a href="greeting.html">ABOUT KVCS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CERTIFICATION</a></li>
-                        <li><a href="#">WHAT'S NEW</a></li>
+                        <li><a href="01_01_greeting.html">ABOUT KVCS</a></li>
+                        <li><a href="02_01_veganCertified.html">SERVICES</a></li>
+                        <li><a href="03_01_certifiedStatus.html">CERTIFICATION</a></li>
+                        <li><a href="04_gallery_list.html">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                     <p class="address">(우04799) 서울특별시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호</p>

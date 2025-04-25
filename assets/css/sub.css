@@ -167,9 +167,9 @@
 .barTitle p{margin-top: 40px;font-size: 28px;color: #333;line-height: 1.429;text-align: left;word-break: keep-all;}
 .certifiedProduct{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;gap: 40px;margin: 50px 0 100px;}
 .certifiedProduct li{flex: 1 auto;height: 220px;padding: 50px 130px 45px 45px;border-radius: 20px;box-sizing: border-box;background-color: #f8f8f8;background-position: 95% 80%;background-repeat: no-repeat;}
-.certifiedProduct li:nth-child(1){background-image: url(../images/sub/icon_product01.png);}
-.certifiedProduct li:nth-child(2){background-image: url(../images/sub/icon_product02.png);}
-.certifiedProduct li:nth-child(3){background-image: url(../images/sub/icon_product03.png);}
+.certifiedProduct li:nth-child(1){width: 360px;background-image: url(../images/sub/icon_product01.png);}
+.certifiedProduct li:nth-child(2){width: 510px;background-image: url(../images/sub/icon_product02.png);}
+.certifiedProduct li:nth-child(3){width: 550px;background-image: url(../images/sub/icon_product03.png);}
 .certifiedProduct li .tit{font-size: 24px;color: #00814e;font-weight: 700;line-height: 1;text-align: left;}
 .certifiedProduct li .num{margin-top: 25px;font-size: 80px;color: #333;font-weight: 700;line-height: 0.7;text-align: left;}
 .certifiedProduct li .num span{font-size: 24px;}
@@ -409,6 +409,7 @@
     #subVisual .visualbg.bg03:before{background-image: url(../images/sub/bg_subVisual03_m.jpg);}
     #subVisual .visualbg.bg04:before{background-image: url(../images/sub/bg_subVisual04_m.jpg);}
     #subVisual .visualbg.bg05:before{background-image: url(../images/sub/bg_subVisual05_m.jpg);}
+    #subVisual .visualbg.bg06:before{background-image: url(../images/sub/bg_subVisual06_m.jpg);}
     .snbList > li{width: calc(50% - 25px);}
     .snbList > li:after{height: 26px;}
     .snbList > li.home{width: 50px;height: 50px;}
@@ -494,9 +495,9 @@
     .textSm{font-size: 16px;}
     .textMd{margin-top: 40px;font-size: 18px;}
     .certifiedProduct{gap: 20px;margin: 40px 0 35px;}
-    .certifiedProduct li{flex: 100%;height: 190px;padding: 40px;}
+    .certifiedProduct li{flex: 100%;height: 190px;padding: 35px;}
     .certifiedProduct li .tit{font-size: 23px;}
-    .certifiedProduct li .num{font-size: 78px;}
+    .certifiedProduct li .num{font-size: 70px;}
     .certifiedProduct li .num span{font-size: 23px;}
     .graphArea{margin-top: 55px;overflow: auto;}
     .graphArea img{width: 1500px;max-width: max-content;}

@@ -37,7 +37,7 @@ $(function(){
         $(".visualSwiper .swiper-slide").find("video").get(0).play();
         $(".pagination button").eq(0).addClass("on");
     };
-    setTimeout(firstSet, 3500);
+    setTimeout(firstSet, 4600);
 
     // fullpage
     $("#fullpage").fullpage({

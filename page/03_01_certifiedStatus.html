@@ -6,7 +6,6 @@
     <title>(주)한국비건인증원</title>
     <link rel="SHORTCUT ICON" href="../assets/images/favicon.png">
     
-    <link rel="stylesheet" type="text/css" href="../assets/css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/aos.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
@@ -14,12 +13,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
 
     <script src="../assets/js/lib/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/lib/ScrollTrigger.min.js"></script>
-    <script src="../assets/js/lib/gsap.min.js"></script>
+    <script src="../assets/js/lib/ScrollToPlugin.min.js"></script>
+    <script src="../assets/js/lib/TweenMax.min.js"></script>
     <script src="../assets/js/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
-    <script src="../assets/js/jquery.fullPage.js"></script>
     <script src="../assets/js/lib/swiper.min.js"></script>
     <script src="../assets/js/ui.js"></script>
     <script src="../assets/js/sub.js"></script>
@@ -151,18 +147,18 @@
                 <li>
                     <button type="button">CERTIFICATION</button>
                     <ul class="depth02">
-                        <li><a href="#">ABOUT KVCS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li class="on"><a href="#">CERTIFICATION</a></li>
-                        <li><a href="#">WHAT'S NEW</a></li>
+                        <li><a href="01_01_greeting.html">ABOUT KVCS</a></li>
+                        <li><a href="02_01_veganCertified.html">SERVICES</a></li>
+                        <li class="on"><a href="03_01_certifiedStatus.html">CERTIFICATION</a></li>
+                        <li><a href="04_gallery_list.html">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </li>
                 <li>
                     <button type="button">인증 현황</button>
                     <ul class="depth02">
-                        <li class="on"><a href="#">인증 현황</a></li>
-                        <li><a href="#">인증 제품 검색</a></li>
+                        <li class="on"><a href="03_01_certifiedStatus.html">인증 현황</a></li>
+                        <li><a href="03_02_certifiedSearch_list.html">인증 제품 검색</a></li>
                     </ul>
                 </li>
             </ul><!-- snbList END -->
@@ -170,28 +166,28 @@
         <div class="subContent">
             <div class="inner">
                 <!-- 컨텐츠 내용 -->
-                <div class="barTitle">
+                <div class="barTitle" data-aos="fade-left">
                     <strong>비건 인증 제품 현황 <span>(2025년 3월 기준)</span></strong>
                 </div>
-                <ul class="certifiedProduct">
+                <ul class="certifiedProduct" data-aos="fade-up">
                     <li>
                         <div class="tit">품목</div>
-                        <div class="num">6<span>군</span></div>
+                        <div class="num"><em class="countNum1">6</em><span>군</span></div>
                     </li>
                     <li>
                         <div class="tit">인증 기업</div>
-                        <div class="num">1,879<span>개</span></div>
+                        <div class="num"><em class="countNum2">1,879</em><span>개</span></div>
                     </li>
                     <li>
                         <div class="tit">인증 제품</div>
-                        <div class="num">11,508<span>개</span></div>
+                        <div class="num"><em class="countNum3">11,508</em><span>개</span></div>
                     </li>
                 </ul>
-                <div class="barTitle">
+                <div class="barTitle" data-aos="fade-left">
                     <strong>인증 제품 수</strong>
                     <p>한국비건인증원의 인증 제품 수는 매년 큰 폭으로 증가하고 있으며, 대기업 및 다양한 품목에 대한 인증이 증가하고 있습니다.</p>
                 </div>
-                <div class="graphArea"><img src="../assets/images/sub/img_product_graph.png" alt="인증 제품수 그래프"></div>
+                <div class="graphArea" data-aos="fade-up"><img src="../assets/images/sub/img_product_graph.png" alt="인증 제품수 그래프"></div>
             </div><!-- inner END -->
         </div><!-- subContent END -->
     </div><!-- sub END -->
@@ -205,10 +201,10 @@
                 <div>
                     <ul class="footerMenu">
                         <li><a href="../index.html">HOME</a></li>
-                        <li><a href="greeting.html">ABOUT KVCS</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CERTIFICATION</a></li>
-                        <li><a href="#">WHAT'S NEW</a></li>
+                        <li><a href="01_01_greeting.html">ABOUT KVCS</a></li>
+                        <li><a href="02_01_veganCertified.html">SERVICES</a></li>
+                        <li><a href="03_01_certifiedStatus.html">CERTIFICATION</a></li>
+                        <li><a href="04_gallery_list.html">WHAT'S NEW</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                     <p class="address">(우04799) 서울특별시 성동구 아차산로17길 48, SK V1 CENTER 1, 312호</p>
