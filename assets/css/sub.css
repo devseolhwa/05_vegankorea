@@ -119,9 +119,10 @@
 .tabList + .dotList{margin: 30px 0 100px;}
 
 .boardHeader{display: flex;flex-direction: row;flex-wrap: wrap;align-items: center;justify-content: space-between;}
-.boardHeader .totalGroup{display: flex;}
+.boardHeader .totalGroup{display: flex;align-items: flex-end;}
 .boardHeader .totalGroup strong{font-size: 30px;color: #000;font-weight: 700;line-height: 1.2;text-align: left;}
-.boardHeader .totalGroup p{margin-left: 20px;font-size: 18px;color: #000;line-height: 2;text-align: left;}
+.boardHeader .totalGroup h4{font-size: 30px;color: #000;font-weight: 700;line-height: 1.2;text-align: left;}
+.boardHeader .totalGroup p{margin-left: 20px;font-size: 18px;color: #000;line-height: 1.5;text-align: left;}
 .boardHeader .totalGroup p span{color: #00814e;font-weight: 600;}
 .boardHeader .boardSearchGroup{display: flex;align-items: center;justify-content: space-between;width: 500px;height: 60px;padding: 0 10px 0 25px;background: #f8f8f8;border-radius: 60px;box-sizing: border-box;}
 .boardHeader .boardSearchGroup .sortSelect{width: 100px;height: 60px;padding-left: 10px;background-color: transparent;box-sizing: border-box;font-size: 16px;color: #000;line-height: 1.2;text-align: left;}
@@ -146,6 +147,7 @@
 .tableList th {position: relative;background: #f8f8f8;color: #000;font-weight: 700;}
 .tableList td {border-bottom: 1px solid #e8e8e8;color: #666;}
 .tableList .btnView{padding-right: 22px;background-image: url(../images/sub/icon_search_green_sm.png);background-position: right center;background-repeat: no-repeat;box-sizing: border-box;font-size: 15px;color: #00814e;font-weight: 700;line-height: 1.2;}
+.tableList td.secret a{padding-left: 25px;background-image: url(../images/sub/icon_secret.png);background-position: left top;background-repeat: no-repeat;}
 .storeList{display: flex;}  
 .storeList li + li:before{content: "";display: inline-block;width: 1px;height: 10px;background: #bbb;margin: 0 8px;}  
 
@@ -290,6 +292,26 @@
 .managementList .iconArea img{vertical-align: bottom;}
 .managementList .textArea{width: calc(100% - 160px);padding-left: 60px;box-sizing: border-box;text-align: left;}
 .managementList .textArea .title{font-size: 28px;color: #000;font-weight: 700;line-height: 1.3;word-break: keep-all;}
+
+.boardForm {position: relative;width: 100%;margin: 25px 0 50px;border-top: 2px solid #292C35;border-bottom: 1px solid #e8e8e8;border-spacing: 0;border-collapse: separate;box-sizing: border-box;}
+.boardForm th, .boardForm td {height: 60px;padding: 15px;box-sizing: border-box;}
+.boardForm th {position: relative;background: #f8f8f8;border-right: 1px solid #e8e8e8;border-top: 1px solid #e8e8e8;font-size: 15px;color: #000;font-weight: 700;letter-spacing: -1px;text-align: center;}
+.boardForm td {border-top: 1px solid #e8e8e8;font-size: 14px;color: #666;font-weight: 400;text-align: left;}
+.boardForm td input, .boardForm td select{width: 250px;height: 44px;border-radius: 5px;color: #666;font-weight: 400;text-align: left;}
+.secretArea{display: inline-block;padding: 10px;border-radius: 5px;border: 1px solid #DCDCDC;box-sizing: border-box;}
+.boardForm textarea{height: 200px;border-radius: 5px;color: #666;font-weight: 400;text-align: left;}
+.filebox .upload-name {display: inline-block;width: 50%;height: 44px;padding: 0 10px;border: 1px solid #DCDCDC;box-sizing: border-box;vertical-align: middle;color: #666;}
+.filebox label {display: inline-block;height: 44px;padding: 0 20px;border-radius: 5px;box-sizing: border-box;color: #fff;vertical-align: middle;background-color: #00814e;cursor: pointer;margin-left: 10px;font-size: 15px;font-weight: 700;line-height: 44px;}
+.filebox input[type="file"] {position: absolute;width: 0;height: 0;padding: 0;overflow: hidden;border: 0;font-size: 15px;}
+.fileList{display: flex;align-items: stretch;justify-content: flex-start;flex-direction: row;flex-wrap: nowrap;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;box-sizing: border-box;}
+.fileList > strong{display: flex;align-items: center;justify-content: center;width: 200px;background: #F9F9F9;font-size: 16px;color: #000;font-weight: 500;vertical-align: middle;letter-spacing: -1px;}
+.fileList > ul{position: relative;width: calc(100% - 200px);box-sizing: border-box;}
+.fileList > ul > li{display: flex;align-items: center;justify-content: flex-start;min-height: 60px;padding: 0 20px;box-sizing: border-box;}
+.fileList > ul > li + li{border-top: 1px solid #ddd;}
+.fileList > ul > li > a{font-size: 16px;color: #333;font-weight: 400;letter-spacing: -0.6px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.replyWrap{padding: 20px;border-top: 1px solid #ddd;box-sizing: border-box;}
+.replyTit{display: block;margin-bottom: 10px; font-size: 18px;color: #00814e;font-weight: 600;line-height: 1.5;letter-spacing: -0.6px;text-align: left;}
+.replyCon{font-size: 16px;color: #333;font-weight: 400;line-height: 1.5;letter-spacing: -0.6px;text-align: left;}
 
 @media screen and (max-width: 1499px){
 
@@ -462,6 +484,7 @@
     .dotList.green > li:before{top: 11px;}
     .boardHeader {justify-content: flex-end;gap: 15px;}
     .boardHeader .totalGroup strong{display: none;}
+    .boardHeader .totalGroup h4{margin-right: 10px;font-size: 26px;line-height: 1;}
     .boardHeader .totalGroup p{margin-left: 0;font-size: 16px;line-height: 1;}
     .boardHeader .totalGroup p:last-child{margin-left: 10px;}
     .boardHeader .boardSearchGroup{width: 100%;height: 44px;padding: 0 10px 0 20px;}
@@ -486,8 +509,10 @@
     .tableList td{display: inline-block;height: auto;margin-top: 5px;padding: 0;border-bottom: 0;font-size: 16px;text-align: left;}
     .tableList .bar:after{content: "";display: inline-block;width: 1px;height: 10px;margin: 0 5px 0 8px;background-color: #ddd;}
     .tableList td.title{display: block;font-size: 20px;color: #000;font-weight: 700;}
+    .tableList td.secret{display: block;font-size: 20px;color: #000;font-weight: 700;}
     .tableList .btnView{position: absolute;right: 0;top: 50%;transform: translateY(-50%);width: 50px;height: 50px;padding-right: 0 !important;background-color: #f2f7f5;background-image: url(../images/sub/icon_search_green_md.png);background-position: center;border-radius: 100%;overflow: hidden;text-indent: -9999px;white-space: nowrap;}
     .tableList td:has( > .storeList){display: block;}
+    .tableList td.secret a{background-position: 0 2px;}
 
     .barTitle strong{font-size: 26px;}
     .barTitle strong span{font-size: 17px;}
@@ -538,7 +563,7 @@
     .boardNav li p{width: 95px;height: 50px;font-size: 14px;}
     .boardNav li a{width: calc(100% - 95px);padding-left: 20px;font-size: 14px;}
     .boardBtnGroup{margin-top: 30px;}
-    .boardBtnGroup button, .boardBtnGroup a{width: 85px;height: 36px;font-size: 14px;}
+    .boardBtnGroup button, .boardBtnGroup a{width: 100px;height: 40px;font-size: 14px;}
     .boardBtnGroup button + button, .boardBtnGroup a + a{margin-left: 5px;}
 
     .certifiedIntroduction{margin-top: 30px;}
@@ -573,6 +598,28 @@
     .boardthumbList .infoArea .title{margin-top: 10px;font-size: 20px;}
     .boardthumbList .infoArea .text{margin-top: 10px;}
     .boardthumbList .infoArea .date{margin-top: 10px;}
+
+    .boardForm{margin-bottom: 20px;}
+    .boardForm:before{display: block;}
+    .boardForm colgroup,
+    .boardForm thead{display: none;}
+    .boardForm tr{position: relative;display: block;}
+    .boardForm th, .boardForm td{display: block;height: auto;}
+    .boardForm th{padding: 0;border: 1px solid #e8e8e8;line-height: 48px;font-size: 14px;}
+    .boardForm td{padding: 10px 0;border-top: 0;font-size: 13px;}
+    .boardForm td input, .boardForm td select{width: 100%;font-size: 13px;}
+    .boardForm textarea{height: 150px;font-size: 13px;}
+    .filebox .upload-name{width: 100%;}
+    .filebox label{width: 100%;margin-left: 0;margin-top: 5px;font-size: 13px;text-align: center;}
+
+    .fileList > strong{width: 95px;font-size: 14px;}
+
+    .fileList > ul{width: calc(100% - 95px);}
+    .fileList > ul > li{min-height: 50px;padding: 0 10px;}
+    .fileList > ul > li > a{font-size: 14px;}
+    .replyWrap{padding: 20px 10px;}
+    .replyTit{margin-bottom: 5px;font-size: 16px;}
+    .replyCon{font-size: 14px;}
 }
 
 @keyframes scale{ 
