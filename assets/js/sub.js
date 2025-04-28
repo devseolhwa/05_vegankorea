@@ -84,7 +84,7 @@ $(function(){
             $(".countNum1").text(num);
         }
     });
-    $({ val : 0 }).animate({ val : 983 }, {
+    $({ val : 0 }).animate({ val : 1879 }, {
         duration: 2000,
         step: function() {
             var num = numberWithCommas(Math.floor(this.val));
@@ -95,7 +95,7 @@ $(function(){
             $(".countNum2").text(num);
         }
     });
-    $({ val : 0 }).animate({ val : 9833 }, {
+    $({ val : 0 }).animate({ val : 11508 }, {
         duration: 2000,
         step: function() {
             var num = numberWithCommas(Math.floor(this.val));

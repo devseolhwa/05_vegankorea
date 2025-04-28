@@ -9,9 +9,10 @@
 #subVisual .visualbg.bg04:before{background-image: url(../images/sub/bg_subVisual04.jpg);}
 #subVisual .visualbg.bg05:before{background-image: url(../images/sub/bg_subVisual05.jpg);}
 #subVisual .visualbg.bg06:before{background-image: url(../images/sub/bg_subVisual06.jpg);}
-#subVisual .visualtext{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);margin-top: 50px;}
+#subVisual .visualtext{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 100%;margin-top: 50px;}
 #subVisual .visualtext h2{font-size: 44px;color: #FFF;font-weight: 700;line-height: 140%;letter-spacing: -1px;text-align: center;}
-
+#subVisual .visualtext p{margin-top: 10px;font-size: 18px;color: rgba(255, 255, 255, 0.6);line-height: 150%;text-align: center;}
+  
 #sub .inner{max-width: 1540px;width: 100%;margin: 0 auto;padding: 0 20px;box-sizing: border-box;}
 .snbListWrap{border-bottom: 1px solid #e8e8e8;box-sizing: border-box;}
 .snbList{display: flex;align-items: center;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;max-width: 1500px;width: 100%;margin: 0 auto;border-left: 1px solid #e8e8e8;box-sizing: border-box;}
@@ -108,6 +109,11 @@
 .tabList{position: relative;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-start;align-items: center;box-sizing: border-box;margin-bottom: 100px;}
 .tabList a{display: flex;align-items: center;justify-content: center;flex: 1 auto;height: 80px;background: #f2f7f5;border: 1px solid #f2f7f5;box-sizing: border-box;font-size: 20px;color: #83a99a;font-weight: 700;line-height: 1;text-align: center;word-break: keep-all;}
 .tabList a.active{position: relative;background: #FFF;border: 1px solid #00814e;color: #00814e;}
+
+.tabList.type2:before{content: "";position: absolute;bottom: 0;left: 0;width: 100%;height: 1px;background: #00814e;}
+.tabList.type2 a{height: 60px;background: #fff;border: 1px solid #fff;color: #333;}
+.tabList.type2 a.active{border: 1px solid #00814e;border-bottom-color: #FFF;color: #00814e;}
+
 .tabContents{display: none;}
 .tabContents.active{display: block;}
 .dotList > li{position: relative;padding-left: 8px;color: #666;font-size: 16px;font-weight: 400;line-height: 1.5;word-break: keep-all;text-align: left;}
@@ -425,7 +431,8 @@
 
     .subContent{margin: 50px 0 60px;}
     #subVisual {padding-top: 0;height: 250px;}
-    #subVisual .visualtext h2 {font-size: 30px;}
+    #subVisual .visualtext h2{font-size: 30px;}
+    #subVisual .visualtext p{margin-top: 5px;font-size: 15px;}
     #subVisual .visualbg.bg01:before{background-image: url(../images/sub/bg_subVisual01_m.jpg);}
     #subVisual .visualbg.bg02:before{background-image: url(../images/sub/bg_subVisual02_m.jpg);}
     #subVisual .visualbg.bg03:before{background-image: url(../images/sub/bg_subVisual03_m.jpg);}
@@ -479,6 +486,9 @@
     .boardTitle p{margin-top: 10px;font-size: 16px;}
     .tabList{margin-bottom: 50px;}
     .tabList a{flex: 50% 0;height: 44px;font-size: 16px;}
+
+    .tabList.type2 a{flex: 1;height: 44px;font-size: 14px;}
+
     .tabList + .dotList{margin: 30px 0 60px;}
     .dotList.green > li{font-size: 16px;}
     .dotList.green > li:before{top: 11px;}
