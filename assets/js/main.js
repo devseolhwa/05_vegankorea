@@ -10,6 +10,7 @@ $(function(){
         observeParents: true,
         autoplay: {
             delay: 5000,
+            stopOnLastSlide: true, //20250716
             disableOnInteraction: false,
         },
         pagination: {
@@ -26,10 +27,10 @@ $(function(){
                 $(".pagination button:nth-child(" + num + ")").addClass("on");
 
                 // 동영상 hold로 주석처리
-                let thisActiveIndex = this.activeIndex;
+                /* let thisActiveIndex = this.activeIndex;
                 let currentVideo = $(".visualSwiper .swiper-slide").eq(thisActiveIndex).find("video");
                 currentVideo.get(0).currentTime = 0;
-                currentVideo.get(0).play();
+                currentVideo.get(0).play(); */
             },
         },
     });

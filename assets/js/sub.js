@@ -37,6 +37,7 @@ $(function(){
             slidesPerView: "auto", // 보여줄 개수
             spaceBetween: 28, // 슬라이드 사이 여백
             freeMode: false,
+            centeredSlides: true,
             allowTouchMove: true,
             navigation: { // 버튼          
                 nextEl: ".thumbSliderArrow .next",
